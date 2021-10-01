@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Онлайн-магазин ювелирных украшений CN">
+    <meta name="Keywords" content="ювелирные украшения, серьги, кольца, браслеты, золото">
+    <!-- <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensans-bold.woff" as="font" type="font/woff" crossorigin> -->
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__container">
+            <form class="header__form">
+              <label>
+                <svg width="14" height="14" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-search" x="0" y="0"></use>
+                </svg>
+                <input type="search" id="search" placeholder="Type here to search">
+              </label>
+            </form>
+            <button class="header__toggle" type="button" aria-label="Открыть или закрыть меню">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <a class="header__logo logo">
+              <svg width="66" height="66">
+                <use xlink:href="img/sprite_auto.svg#icon-logo" x="0" y="0"></use>
+              </svg>
+            </a>
+            <div class="header__users-links">
+              <a class="header__login" href="login.html">Login</a>
+              <a class="header__cart" href="#">
+                <svg width="20" height="18" aria-hidden="true">
+                  <use xlink:href="img/sprite_auto.svg#icon-bag" x="0" y="0"></use>
+                </svg>
+                <span>Cart</span>
+                <span class="header__items-in-cart"> 0</span>
+              </a>
+            </div>
+          </div>
+          <nav class="navigation header__navigation navigation-closed navigation-nojs">
+            <ul>
+              <li>
+                <a>What’s new</a>
+              </li>
+              <li>
+                <a>Chokers</a>
+              </li>
+              <li>
+                <a>Necklaces</a>
+              </li>
+              <li>
+                <a>Rings</a>
+              </li>
+              <li>
+                <a>Earrings</a>
+              </li>
+            </ul>
+
+          </nav>
+          <ul class="header__additional-list">
+            <li>
+              <a href="#">About CH</a>
+            </li>
+            <li>
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="header__additional-special" href="#">Login</a>
+            </li>
+          </ul>
+
+        </div>
+      </header>
+      <main>
+
+      </main>
+
+      <footer>
+
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
