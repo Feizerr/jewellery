@@ -1,0 +1,46 @@
+.subscribe {
+  flex-basis: 50%;
+  padding-right: 77px;
+}
+
+.subscribe h2,
+.subscribe p {
+  max-width: 90%;
+  padding-bottom: 25px;
+}
+
+.subscribe h2 {
+  @include fonts (34px, 44px);
+  font-family: "cormorantgaramond-bold","Arial", sans-serif;
+}
+
+.subscribe p {
+  @include fonts (16px, 20px);
+  font-family: "poppins-regular","Arial", sans-serif;
+}
+
+.subscribe__container {
+  border-bottom: 1px solid $white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe__form input {
+  border: none;
+  background-color: $black;
+  color: $white;
+  min-width: 300px;
+  padding: 10px 20px 10px 0;
+
+  &::placeholder {
+    @include fonts(14px, 21px);
+    color: $grey;
+  }
+}
+
+.subscribe__button {
+  background-color: $black;
+  color: $white;
+  border: none;
+
+}

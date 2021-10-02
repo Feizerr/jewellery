@@ -2,10 +2,11 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  max-width: 1214px;
 }
 
 .header__container {
-  padding: 47px 98px 19px;
+  padding: 47px 20px 19px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 16px;

@@ -1,0 +1,31 @@
+.footer {
+  background-color: $black;
+  color: $white;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  max-width: 1214px;
+  padding: 88px 20px 81px;
+  display: flex;
+  width: 100%;
+}
+
+.footer ul {
+  @include offset(0, 0);
+  @include list-reset();
+}
+
+.footer li {
+  @include offset(0, 0);
+  padding-bottom: 30px;
+}
+
+.footer a {
+  @include link();
+}
+
+.footer h2,
+.footer p {
+  @include offset(0, 0);
+}
