@@ -1,0 +1,87 @@
+.title-box {
+  background-color: $brown;
+  color: $white;
+}
+
+.title-box--index {
+  background-image: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 463px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main@2x.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .title-box--index {
+    background-image: url("../img/main-tab.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-tab@2x.jpg");
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .title-box--index {
+    background-image: url("../img/main-mob.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-mob@2x.jpg");
+  }
+}
+
+.title-box__wrapper {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+@media (max-width: $mobile-width) {
+  .title-box__wrapper {
+    max-width: 90%;
+  }
+}
+
+.title-box h2 {
+  @include offset(0, 0);
+  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.title-box p {
+  @include offset(0, 0);
+  font-family: "cormorantgaramond-regular", "Arial", sans-serif;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+}
+
+.title-box--index h2 {
+  @include fonts(45px, 58px);
+  padding-top: 195px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: $mobile-width) {
+  .title-box--index h2{
+    @include fonts(38px, 49px);
+    padding-top: 200px;
+    padding-bottom: 16px;
+  }
+}
+
+
+.title-box--index p {
+  @include fonts(38px, 49px);
+}
+
+@media (max-width: $mobile-width) {
+  .title-box--index h2{
+    @include fonts(34px, 44px);
+  }
+}

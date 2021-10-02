@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Онлайн-магазин ювелирных украшений CN">
     <meta name="Keywords" content="ювелирные украшения, серьги, кольца, браслеты, золото">
-    <!-- <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/opensans-bold.woff" as="font" type="font/woff" crossorigin> -->
     <title>Стартовый шаблон</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -43,22 +41,22 @@
               </a>
             </div>
           </div>
-          <nav class="navigation header__navigation navigation-closed navigation-nojs">
+          <nav class="navigation header__navigation navigation__nojs">
             <ul>
               <li>
-                <a>What’s new</a>
+                <a href="#">What’s new</a>
               </li>
               <li>
-                <a>Chokers</a>
+                <a href="#">Chokers</a>
               </li>
               <li>
-                <a>Necklaces</a>
+                <a href="#">Necklaces</a>
               </li>
               <li>
-                <a>Rings</a>
+                <a href="#">Rings</a>
               </li>
               <li>
-                <a>Earrings</a>
+                <a href="#">Earrings</a>
               </li>
             </ul>
 
@@ -80,7 +78,68 @@
 
         </div>
       </header>
+
       <main>
+        <h1 class="visually-hidden">The best jewellery for you. CH</h1>
+        <section class="title-box title-box--index">
+          <div class="title-box__wrapper title-box__wrapper--index">
+            <h2>PERFECTION</h2>
+            <p>made to be yours</p>
+          </div>
+
+        </section>
+        <section class="new">
+          <div class="new__wrapper">
+            <h2>New In</h2>
+            <p>
+              <a href="#">Shop Now</a>
+            </p>
+            <div class="new__slider-container">
+              <div class="slider">
+                <div class="slider__item">
+                  <img src="img/amethyst.jpg" alt="Necklace with amethyst" width="270" height="284">
+                  <h3>Necklace with amethyst</h3>
+                  <p>$ 145</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/choker.jpg" alt="Layered сhoker" width="270" height="284">
+                  <h3>Layered сhoker</h3>
+                  <p>$ 115</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/gold-layered-necklace.jpg" alt="Gold chain" width="270" height="284">
+                  <h3>Gold chain</h3>
+                  <p>$ 215</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/galaxy-earrings-desktop-1.jpg" alt="Galaxy earrings" width="270" height="284">
+                  <h3>Galaxy earrings</h3>
+                  <p>$ 95</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/gold-layered-necklace.jpg" alt="Gold chain" width="270" height="284">
+                  <h3>Gold chain</h3>
+                  <p>$ 215</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/galaxy-earrings-desktop-1.jpg" alt="Galaxy earrings" width="270" height="284">
+                  <h3>Galaxy earrings</h3>
+                  <p>$ 95</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/gold-layered-necklace.jpg" alt="Gold chain" width="270" height="284">
+                  <h3>Gold chain</h3>
+                  <p>$ 215</p>
+                </div>
+                <div class="slider__item">
+                  <img src="img/galaxy-earrings-desktop-1.jpg" alt="Galaxy earrings" width="270" height="284">
+                  <h3>Galaxy earrings</h3>
+                  <p>$ 95</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
       </main>
 
@@ -89,38 +148,36 @@
           <section class="subscribe">
             <h2>The good stuff in your inbox </h2>
             <p>News and updates from CH. No spam, we promise.</p>
-            <div class="subscribe__container">
-              <form class='subscribe__form' action='https://echo.htmlacademy.ru/' method='post' autocomplete="off">
-                <label for='mail'>
-                  <input type='text' name='mail' placeholder='Your E-mail' id='mail' required>
-                </label>
-              </form>
-              <button class="subscribe__button">Sign Up
+            <form class='subscribe__form' action='https://echo.htmlacademy.ru/' method='post' autocomplete="off">
+              <label for='mail'>
+                <input type='email' name='mail' placeholder='Your E-mail' id='mail' required>
+              </label>
+              <button type="submit" class="subscribe__button">Sign Up
                 <svg width="29" height="9" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-arrow-right" x="0" y="0"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </section>
           <section class="about-ordering">
             <ul>
               <li>
-                <a>
+                <a href="#">
                   Ordering & Payment
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   Terms & Conditions
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   Returns & Exchanges
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   Delivery
                 </a>
               </li>
@@ -129,22 +186,22 @@
           <section class="about-company">
             <ul>
               <li>
-                <a>
+                <a href="#">
                   About CH
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   Stores & Hours
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   Jobs
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   Contact Us
                 </a>
               </li>
@@ -153,7 +210,7 @@
           <section class="footer-social">
             <ul>
               <li>
-                <a>
+                <a href="#">
                   <svg width="8" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-fb" x="0" y="0"></use>
                   </svg>
@@ -161,7 +218,7 @@
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-insta" x="0" y="0"></use>
                   </svg>
@@ -169,7 +226,7 @@
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   <svg width="15" height="15">
                     <use xlink:href="img/sprite_auto.svg#icon-pinterest" x="0" y="0"></use>
                   </svg>
@@ -177,7 +234,7 @@
                 </a>
               </li>
               <li>
-                <a>
+                <a href="#">
                   <svg width="15" height="13">
                     <use xlink:href="img/sprite_auto.svg#icon-twitter" x="0" y="0"></use>
                   </svg>
@@ -185,11 +242,15 @@
                 </a>
               </li>
             </ul>
-
           </section>
         </div>
       </footer>
     </div>
+    <!-- jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- слайдер Slick -->
+			<script src="js/slick.min.js"></script>
+			<!-- файл скриптов -->
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,17 @@
+.about-ordering {
+  width: 177px;
+  margin-right: 4%;
+}
+
+@media (max-width: $tablet-width) {
+  .about-ordering {
+    width: 170px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-ordering {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.about-company {
+  width: 14%;
+  margin-right: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    width: 120px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company {
+    margin-bottom: 20px;
+  }
+}

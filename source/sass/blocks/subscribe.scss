@@ -3,6 +3,20 @@
   padding-right: 77px;
 }
 
+@media (max-width: $tablet-width) {
+  .subscribe {
+    flex-basis: 100%;
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .subscribe {
+    margin-bottom: 50px;
+  }
+}
+
 .subscribe h2,
 .subscribe p {
   max-width: 90%;
@@ -17,20 +31,26 @@
 .subscribe p {
   @include fonts (16px, 20px);
   font-family: "poppins-regular","Arial", sans-serif;
+  color: $grey;
 }
 
-.subscribe__container {
+.subscribe__form {
   border-bottom: 1px solid $white;
   display: flex;
   justify-content: space-between;
+}
+
+.subscribe__form label {
+  min-width: 300px;
+  width: 70%;
 }
 
 .subscribe__form input {
   border: none;
   background-color: $black;
   color: $white;
-  min-width: 300px;
   padding: 10px 20px 10px 0;
+  width: 100%;
 
   &::placeholder {
     @include fonts(14px, 21px);
@@ -38,9 +58,39 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .subscribe__form input {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .subscribe__form label {
+    min-width: 181px;
+    flex-basis: 70%;
+  }
+}
+
 .subscribe__button {
   background-color: $black;
   color: $white;
   border: none;
-
 }
+
+@media (max-width: $mobile-width) {
+  .subscribe__button {
+    width: 127px;
+  }
+}
+
+.subscribe__button:active {
+  opacity: 0.6;
+}
+
+.subscribe__form input:hover,
+.subscribe__form input:active {
+  &::placeholder {
+    color: $brown;
+  }
+}
+

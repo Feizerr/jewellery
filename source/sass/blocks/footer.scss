@@ -11,6 +11,24 @@
   width: 100%;
 }
 
+@media (max-width: $tablet-width) {
+  .footer__wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom:60px;
+  padding-left: 45px;
+  padding-right: 20%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer__wrapper {
+    padding: 60px 15px;
+    flex-direction: column;
+  }
+}
+
 .footer ul {
   @include offset(0, 0);
   @include list-reset();
@@ -23,9 +41,19 @@
 
 .footer a {
   @include link();
+  color: $white;
 }
 
 .footer h2,
 .footer p {
   @include offset(0, 0);
+}
+
+.footer a:hover,
+.footer button:hover {
+  color: $brown;
+}
+
+.footer a:active {
+  border-bottom: 1px solid $brown;
 }

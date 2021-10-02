@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   max-width: 1214px;
+  padding-bottom: 19px;
 }
 
 .header__container {
@@ -167,9 +168,7 @@
   }
 
   & svg {
-    fill: $white;
     stroke: $white;
-    color: white;
   }
 
   & .header__form {
