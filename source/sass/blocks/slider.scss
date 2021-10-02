@@ -5,14 +5,8 @@
 	border: 0;
 	box-sizing: border-box;
 }
-/*Стили для демонстрации*/
-html,body{
-	height: 100%;
-	background-color: #333;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #fff;
-	font-size: 25px;
-}
+
+
 .new__slider-container{
 	height: 100%;
 	padding: 50px;
@@ -43,28 +37,6 @@ html,body{
 	align-items: flex-start;
 }
 
-/* Слайд */
-.slick-slide{}
-/* Слайд активный */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-/* Точки */
-.slick-dots{}
-.slick-dots li{}
-.slick-dots button{}
 
 /* Конкретный слайдер */
 .slider {
@@ -110,7 +82,11 @@ html,body{
 }
 .slider .slick-dots button{
 	width: 10px;
-	height: 10px;
+	height: 20px;
+  background-color: $white;
+  font-size: 8px;
+  line-height: 12px;
+
 }
 
 .slider .slick-dots li.slick-active button{
@@ -120,9 +96,26 @@ html,body{
 	padding: 0px 15px;
 }
 .slider__item img{
-	max-width: 100%;
-}
-.slider__item.slick-center{
-
+	width: 100%;
+  height: 284px;
 }
 
+.slick button {
+  background-color: $white;
+}
+.slider h3 {
+  @include fonts(16px, 20px);
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px 0 15px;
+}
+
+.slider p {
+  @include fonts(14px, 18px);
+  font-family: "poppins-bold", "Arial", sans-serif;
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 60px;
+}
