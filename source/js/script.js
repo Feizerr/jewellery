@@ -41,6 +41,9 @@ headerToggle.addEventListener('click', function () {
 
 //slider
 
+var buttonText = document.querySelector('.slick-active button')
+var valueValue = buttonText.textContent;
+
 
 $(document).ready(function(){
 	$('.slider').slick({
@@ -69,14 +72,8 @@ $(document).ready(function(){
 	});
 
     $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    console.log($('.slick-active'));
-    $("#start-pages").text(currentSlide + 1);
+    $("#start-pages").text(valueValue);
   });
-
-  // $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-  //   console.log(currentSlide);
-  //   $("#start-pages").text(currentSlide + 1);
-  // });
 
 
 });
