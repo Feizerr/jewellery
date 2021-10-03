@@ -41,6 +41,7 @@ headerToggle.addEventListener('click', function () {
 
 //slider
 
+
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
@@ -66,5 +67,17 @@ $(document).ready(function(){
 			}
 		]
 	});
+
+    $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    console.log($('.slick-active'));
+    $("#start-pages").text(currentSlide + 1);
+  });
+
+  // $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  //   console.log(currentSlide);
+  //   $("#start-pages").text(currentSlide + 1);
+  // });
+
+
 });
 

@@ -1,4 +1,3 @@
-
 .new__wrapper {
   margin: 0 auto;
 	padding: 130px 20px;
@@ -36,4 +35,28 @@
 
 .new a:hover {
   color: $brown;
+}
+
+.new__slider-container{
+	height: 100%;
+	padding: 0;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	max-width: 1172px;
+	margin:  0 auto;
+	width: 87%;
+}
+
+@media (max-width: $tablet-width){
+	.new__slider-container {
+    width: 678px;
+  }
+}
+
+@media (max-width: $mobile-width){
+	.new__slider-container {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
