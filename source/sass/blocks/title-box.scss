@@ -68,7 +68,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .title-box--index h2{
+  .title-box--index h2 {
     @include fonts(38px, 49px);
     padding-top: 200px;
     padding-bottom: 16px;
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .title-box--index h2{
+  .title-box--index h2 {
     @include fonts(34px, 44px);
   }
 }

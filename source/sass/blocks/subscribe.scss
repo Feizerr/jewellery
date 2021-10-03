@@ -25,12 +25,12 @@
 
 .subscribe h2 {
   @include fonts (34px, 44px);
-  font-family: "cormorantgaramond-bold","Arial", sans-serif;
+  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
 }
 
 .subscribe p {
   @include fonts (16px, 20px);
-  font-family: "poppins-regular","Arial", sans-serif;
+  font-family: "poppins-regular", "Arial", sans-serif;
   color: $grey;
 }
 
@@ -93,4 +93,3 @@
     color: $brown;
   }
 }
-

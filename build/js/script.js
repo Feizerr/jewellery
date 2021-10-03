@@ -5,9 +5,7 @@ var deleteNavigation = function () {
   window.addEventListener('resize', function () {
     if (window.innerWidth <= 1023) {
       navigation.classList.add("navigation__closed");
-    }
-
-    else {
+    } else {
       navigation.classList.remove("navigation__closed");
     }
   })
@@ -21,9 +19,7 @@ var removePlaceholderValue = function () {
   window.addEventListener('resize', function () {
     if (window.innerWidth <= 767) {
       inputForSearch.placeholder = "";
-    }
-
-    else {
+    } else {
       inputForSearch.placeholder = "Type here to search";
     }
   })
@@ -45,36 +41,32 @@ var buttonText = document.querySelector('.slick-active button')
 var valueValue = buttonText.textContent;
 
 
-$(document).ready(function(){
-	$('.slider').slick({
-		arrows:true,
-		dots:true,
-		slidesToShow:4,
-		slidesToScroll:4,
-		speed:1000,
-		responsive:[
-			{
-				breakpoint: 1023,
-				settings: {
-					slidesToShow:2,
-          slidesToScroll:2,
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow:2,
-					dots:false,
-					arrows:false,
-				}
-			}
-		]
-	});
-
-    $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    $("#start-pages").text(valueValue);
+$(document).ready(function () {
+  $('.slider').slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    speed: 1000,
+    responsive: [{
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+          arrows: false,
+        }
+      }
+    ]
   });
 
-
+  $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $("#start-pages").text(valueValue);
+  });
 });
-
