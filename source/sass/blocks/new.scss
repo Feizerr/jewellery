@@ -8,14 +8,11 @@
 	align-items: center;
 }
 
-// .new__slider-container {
-//   height: 100%;
-// 	padding: 0;
-// 	display: flex;
-// 	justify-content:center;
-// 	align-items: center;
-//   max-width: 1169px;
-// }
+@media (max-width: $mobile-width){
+	.new__wrapper {
+    padding: 70px 15px;
+  }
+}
 
 .new h2 {
   @include fonts(34px, 44px);

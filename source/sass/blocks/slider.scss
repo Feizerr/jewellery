@@ -24,6 +24,13 @@
   }
 }
 
+@media (max-width: $mobile-width){
+	.new__slider-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 /* Основные стили */
 
 /* Слайдер */
@@ -41,10 +48,9 @@
 	justify-content: space-between;
 }
 
-@media (max-width: $tablet-width) {
-  justify-content: flex-start;
-}
-
+// @media (max-width: $tablet-width) {
+//   justify-content: flex-start;
+// }
 
 /* Конкретный слайдер */
 .slider {
@@ -55,6 +61,12 @@
 @media (max-width:767px){
 	.slider {
 		padding: 0px 20px;
+	}
+}
+
+@media (max-width: $mobile-width){
+	.slider {
+		padding: 0px;
 	}
 }
 
@@ -111,6 +123,10 @@
 @media (max-width: $tablet-width){
 	.slider__item {
     flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -131,6 +147,13 @@
   .slider__item img{
     max-width: 324px;
     height: 340px;
+  }
+}
+
+@media (max-width: $mobile-width){
+	.slider__item img{
+    width: 90%;
+    height: auto;
   }
 }
 
