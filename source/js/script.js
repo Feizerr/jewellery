@@ -35,6 +35,45 @@ headerToggle.addEventListener('click', function () {
 });
 
 
+// accordion
+
+var minHeight = 0;
+var accordionItemHeaders = document.querySelectorAll('.accordion__item > h3');
+var accordionItemsBody = document.querySelectorAll('.accordion__item-body');
+var padding = 30;
+
+accordionItemsBody.forEach(function (accordionItem) {
+  accordionItem.classList.remove('accordion__no-js');
+})
+
+var useAccordion = function (element) {
+  var currentlyActiveAccordionItemHeader = document.querySelector('.accordion__item > h3.active');
+  if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== element) {
+    currentlyActiveAccordionItemHeader.classList.toggle('active');
+    currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = minHeight;
+  }
+
+  element.classList.toggle('active');
+  var accordionItemBody = element.nextElementSibling;
+  if (element.classList.contains('active')) {
+    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + padding + 'px';
+  } else {
+    accordionItemBody.style.maxHeight = minHeight;
+  }
+};
+
+accordionItemHeaders.forEach(function (accordionItemHeader) {
+  accordionItemHeader.addEventListener('click', function () {
+    useAccordion(accordionItemHeader);
+  });
+
+  accordionItemHeader.addEventListener('keydown', function () {
+    useAccordion(accordionItemHeader);
+  });
+})
+
+
+
 //slider
 
 

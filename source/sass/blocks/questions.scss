@@ -1,0 +1,13 @@
+.questions {
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.questions h2 {
+  @include fonts(34px, 44px);
+  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  padding: 0 0 60px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}

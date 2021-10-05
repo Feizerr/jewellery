@@ -1,0 +1,81 @@
+.accordion {
+  margin: 0 auto;
+  max-width: 678px;
+  border: 1px solid $brown;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.accordion__item {
+  padding: 50px;
+  border-bottom: 1px solid $brown;
+}
+
+.accordion__item:last-child {
+  border-bottom: none;
+}
+
+
+.accordion h3 {
+  @include offset(0, 0);
+  @include fonts(18px, 23px);
+  margin-bottom: 26px;
+  font-family: 'poppins-medium', Arial, sans-serif;
+  width: 100%;
+  text-align: left;
+}
+
+  .accordion h3 {
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    min-height: 77px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .accordion h3::after {
+    content: '';
+    background-image: url('../img/up.svg');
+    width: 23px;
+    height: 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+  }
+
+  .accordion h3.active::after {
+    content: '';
+    background-image: url('../img/down.svg');
+    width: 23px;
+    height: 14px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+  }
+
+.accordion__container-list {
+  display: flex;
+}
+
+
+.accordion__item-body {
+  max-height: 0;
+  overflow: hidden;
+}
+
+
+.accordion__item-body p {
+  @include offset(0, 0);
+  @include fonts(16px, 20px)
+  font-family: 'poppins-regular', Arial, sans-serif;
+}
+
+
+.accordion__no-js {
+  max-height: max-content;
+  overflow: auto;
+}
