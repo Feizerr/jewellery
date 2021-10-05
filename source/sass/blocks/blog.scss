@@ -4,6 +4,18 @@
   margin: 0 auto;
 }
 
+@media (max-width: $tablet-width) {
+  .blog {
+    padding: 0 45px 80px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .blog {
+    padding: 0 15px 0;
+  }
+}
+
 .blog h2 {
   @include fonts(34px, 44px);
   font-family: "cormorantgaramond-bold", "Arial", sans-serif;
@@ -40,16 +52,122 @@
   overflow: hidden;
 }
 
+@media (max-width: $tablet-width) {
+  .blog__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
 
 .blog__container {
-  display: flex;
-  justify-content: space-between;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .blog__big-container {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }
 
 .blog__big-container {
-  grid-column: 2/3;
-  grid-row: 1/3;
+  min-height: 630px;
+  position: relative;
 }
+
+@media (max-width: $tablet-width) {
+  .blog__big-container {
+    min-height: 300px;
+  }
+}
+
+.blog__container:nth-child(3n +2) .blog__img {
+  order: 2;
+}
+
+
+.blog__big-container .blog__article-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 285px;
+}
+
+@media (max-width: $tablet-width) {
+  .blog__big-container .blog__article-wrapper {
+    width: calc(100% - 339px);
+    max-width: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .blog__container .blog__article-wrapper {
+    width: 100%;
+    height: auto;
+    padding-bottom: 59px;
+    margin-top: 256px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .blog__container {
+    min-height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .blog__container {
+    background-size: auto 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .blog__container {
+    min-height: 512px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-position: top center;
+    background-size: contain;
+    max-width: 575px;
+    margin: 0 auto 40px;
+  }
+}
+
+.blog__care {
+  background-image: url("../img/jess-harper-sunday-desktop.jpg");
+}
+
+@media (max-width: $tablet-width) {
+  .blog__care {
+    background-image: url("../img/jess.jpg");
+  }
+}
+
+.blog__cristall {
+  background-image: url("../img/alex-holyoake-desktop.jpg");
+}
+
+@media (max-width: $tablet-width) {
+  .blog__cristall {
+    background-image: url("../img/alex.jpg");
+  }
+}
+
+.blog__trends {
+  background-image: url("../img/alve-odonnell-desktop.jpg");
+}
+
+@media (max-width: $tablet-width) {
+  .blog__trends {
+    background-image: url("../img/alve.jpg");
+  }
+}
+
 
 .blog__container time {
   @include offset(0, 0);
@@ -67,58 +185,65 @@
   text-align: center;
   width: 90%;
   padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+@media (max-width: $mobile-width) {
+  .blog h3 {
+    width: 56%;
+  }
 }
 
 .blog__container p {
   padding: 0 0 10px;
   text-align: center;
   width: max-content;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .blog__container a {
   @include link();
-  color: $almost-black;
   @include fonts(16px, 21px);
+  color: $almost-black;
 }
 
-.blog__img {
-  width: 285px;
-  height: 300px;
-}
-
-.blog__img img {
-  height: 100%;
-}
 
 .blog__article-wrapper {
-  width: 100%;
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 71px;
   z-index: 5;
   background-color: $beige;
   height: 300px;
-}
-
-.blog__big-container {
-  min-height: 630px;
-  position: relative;
-}
-
-
-.blog__big-container img {
-  height: 630px;
-  width: auto;
-}
-
-.blog__container:nth-child(3n +2) .blog__img {
-  order: 2;
-}
-
-.blog__big-container .blog__article-wrapper {
   position: absolute;
-  bottom: 0;
+}
+
+
+@media (max-width: $mobile-width) {
+  .blog__article-wrapper {
+    padding-top:49px;
+    position: relative;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .blog__article-wrapper {
+    width: calc(100% - 339px);
+  }
+}
+
+.blog__container:nth-child(3n-2) .blog__article-wrapper {
   right: 0;
-  max-width: 285px;
+}
+
+@media (max-width: $tablet-width) {
+  .blog__container:nth-child(3n) .blog__article-wrapper {
+    right: 0;
+  }
+}
+
+.blog__container:nth-child(3n+2) {
+  background-position-x: right;
 }

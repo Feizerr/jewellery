@@ -17,7 +17,7 @@ var inputForSearch = document.querySelector('#search')
 
 var removePlaceholderValue = function () {
   window.addEventListener('resize', function () {
-    if (window.innerWidth <= 767) {
+    if (window.innerWidth <= 1023) {
       inputForSearch.placeholder = "";
     } else {
       inputForSearch.placeholder = "Type here to search";
@@ -46,14 +46,14 @@ $(document).ready(function () {
     slidesToScroll: 4,
     speed: 1000,
     responsive: [{
-        breakpoint: 1023,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           dots: false,

@@ -45,6 +45,12 @@
   top: 9px;
 }
 
+@media (max-width: $tablet-width) {
+  .header__form svg{
+    left: 15px;
+  }
+}
+
 .header__logo {
   margin: 0 auto;
 }
@@ -156,64 +162,61 @@
 .header--active {
   background-color: $brown;
   padding: 55px 45px 80px;
-
-  & .header__container {
-    flex-wrap: wrap;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  & a {
-    color: $white;
-  }
-
-  & svg {
-    stroke: $white;
-  }
-
-  & .header__form {
-    display: block;
-    order: 3;
-    flex-basis: 100%;
-  }
-
-  & .header__form input {
-    width: 100%;
-    border-radius: 15px;
-    background-color: rgba($white, 0.15);
-  }
-
-  & .header__toggle {
-    background-color: $brown;
-    background-image: url("../img/active-button.svg");
-  }
-
-  & .navigation {
-    border-top: none;
-  }
-
-  & .navigation ul {
-    flex-direction: column;
-    border-top: none;
-    margin: 0;
-  }
-
-  & .navigation li {
-    @include fonts(24px, 36px);
-    padding-bottom: 40px;
-    padding-left: 0;
-  }
-
-  .header__additional-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header__additional-special {
-    padding-top: 25px;
-  }
-
-  .header__form svg {
-    left: 15px;
-  }
 }
+
+.header--active .header__container {
+  flex-wrap: wrap;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.header--active a {
+  color: $white;
+}
+
+.header--active svg {
+  stroke: $white;
+}
+
+.header--active .header__form {
+  display: block;
+  order: 3;
+  flex-basis: 100%;
+}
+
+.header--active input {
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgba($white, 0.15);
+}
+
+.header--active .header__toggle {
+  background-color: $brown;
+  background-image: url("../img/active-button.svg");
+}
+
+.header--active .navigation {
+  border-top: none;
+}
+
+.header--active .navigation__list {
+  flex-direction: column;
+  border-top: none;
+  margin: 0;
+}
+
+.header--active .navigation__item {
+  @include fonts(24px, 36px);
+  padding-bottom: 40px;
+  padding-left: 0;
+}
+
+.header--active .header__additional-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.header--active .header__additional-special {
+  padding-top: 25px;
+}
+
