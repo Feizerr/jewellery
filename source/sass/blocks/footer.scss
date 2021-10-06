@@ -32,11 +32,12 @@
 .footer ul {
   @include offset(0, 0);
   @include list-reset();
+  padding-top: 10px;
 }
 
 .footer li {
   @include offset(0, 0);
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .footer a {

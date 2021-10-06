@@ -1,6 +1,6 @@
 .subscribe {
   flex-basis: 50%;
-  padding-right: 77px;
+  padding-right: 87px;
 }
 
 @media (max-width: $tablet-width) {
@@ -20,18 +20,20 @@
 .subscribe h2,
 .subscribe p {
   max-width: 90%;
-  padding-bottom: 25px;
 }
 
 .subscribe h2 {
   @include fonts (34px, 44px);
   font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  letter-spacing: 0.7px;
+  padding-bottom: 12px
 }
 
 .subscribe p {
   @include fonts (16px, 20px);
   font-family: "poppins-regular", "Arial", sans-serif;
   color: $grey;
+  padding-bottom: 33px;
 }
 
 .subscribe__form {
@@ -75,6 +77,7 @@
   background-color: $black;
   color: $white;
   border: none;
+  min-width: fit-content;
 }
 
 @media (max-width: $mobile-width) {

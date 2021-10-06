@@ -1,12 +1,12 @@
 .gallery {
   margin: 0 auto;
-  padding-bottom: 132px;
+  padding-bottom: 127px;
 }
 
 .gallery h2 {
   @include fonts(34px, 44px);
   font-family: "cormorantgaramond-bold", "Arial", sans-serif;
-  padding: 0 0 35px;
+  padding: 0 0 30px;
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -38,8 +38,8 @@
   max-width: 1210px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 2%;
+  grid-template-columns: 1fr 1fr 0.7fr 1fr 1fr;
+  column-gap: 20px;
   row-gap: 34px;
 }
 

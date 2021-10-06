@@ -1,6 +1,6 @@
 .new__wrapper {
   margin: 0 auto;
-  padding: 130px 20px;
+  padding: 120px 20px 114px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,12 +17,12 @@
   @include fonts(34px, 44px);
   @include offset(0, 0);
   font-family: "cormorantgaramond-bold", "Arial", sans-serif;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .new p {
   @include offset(0, 0);
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .new a {
