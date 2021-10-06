@@ -59,22 +59,54 @@
   }
 }
 
+.gallery__normai-item {
+  min-height: 230px;
+}
+
+@media (max-width: $tablet-width) {
+  .gallery__normai-item {
+    min-height: 133px;
+  }
+}
+
+.gallery__small-item {
+  min-height: 150px;
+}
+
+@media (max-width: $tablet-width) {
+  .gallery__small-item {
+    min-height: 87px;
+  }
+}
+
 .gallery__big-item {
   grid-row-end: span 2;
   grid-column-end: span 2;
+  min-height: 412px;
+}
+
+@media (max-width: $tablet-width) {
+  .gallery__big-item {
+    min-height: 240px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .gallery__big-item {
     grid-column-end: span 1;
+    min-height: 247px;
   }
 }
 
 .gallery__item {
-  width: auto;
+  width: 100%;
+  background-color: $brown;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.gallery__item img{
+.gallery__item img {
   width: 100%;
 }
 
@@ -94,5 +126,61 @@
 @media (max-width: $mobile-width) {
   .gallery__normai-item:not(:first-child) {
     display: none;
+  }
+}
+
+.gallery__square {
+  background-image: url("../img/inst-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/inst-desktop@2x.jpg");
+  }
+}
+
+.gallery__large {
+  background-image: url("../img/woman.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/woman@2x.jpg");
+  }
+}
+
+.gallery__bracelet {
+  background-image: url("../img/ring.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/ring@2x.jpg");
+  }
+}
+
+.gallery__round {
+  background-image: url("../img/ring-earning.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/ring-earnung@2x.jpg");
+  }
+}
+
+.gallery__brown {
+  background-image: url("../img/brown.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/brown@2x.jpg");
+  }
+}
+
+.gallery__sea {
+  background-image: url("../img/sea.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/sea@2x.jpg");
+  }
+}
+
+.gallery__rings {
+  background-image: url("../img/green.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green@2x.jpg");
   }
 }

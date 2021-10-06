@@ -140,31 +140,55 @@
 
 .blog__care {
   background-image: url("../img/jess-harper-sunday-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/jess-harper-sunday-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: $tablet-width) {
   .blog__care {
     background-image: url("../img/jess.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jess@2x.jpg");
+    }
   }
 }
 
 .blog__cristall {
   background-image: url("../img/alex-holyoake-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/alex-holyoake-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: $tablet-width) {
   .blog__cristall {
     background-image: url("../img/alex.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alex@2x.jpg");
+    }
   }
 }
 
 .blog__trends {
   background-image: url("../img/alve-odonnell-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/alve-odonnell-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: $tablet-width) {
   .blog__trends {
     background-image: url("../img/alve.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alve@2x.jpg");
+    }
   }
 }
 
