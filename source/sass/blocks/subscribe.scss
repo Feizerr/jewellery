@@ -13,13 +13,20 @@
 
 @media (max-width: $mobile-width) {
   .subscribe {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 }
 
 .subscribe h2,
 .subscribe p {
   max-width: 90%;
+}
+
+@media (max-width: $mobile-width) {
+  .subscribe h2,
+  .subscribe p {
+    max-width: 78%;
+  }
 }
 
 .subscribe h2 {
@@ -82,7 +89,7 @@
 
 @media (max-width: $mobile-width) {
   .subscribe__button {
-    width: 127px;
+    width: 105px;
   }
 }
 

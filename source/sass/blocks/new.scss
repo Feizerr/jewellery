@@ -16,7 +16,7 @@
 
 @media (max-width: $mobile-width) {
   .new__wrapper {
-    padding: 70px 15px;
+    padding: 56px 23px 59px;
   }
 }
 
@@ -36,6 +36,12 @@
 .new p {
   @include offset(0, 0);
   padding-bottom: 60px;
+}
+
+@media (max-width: $mobile-width) {
+  .new p {
+    padding-bottom: 48px;
+  }
 }
 
 .new a {

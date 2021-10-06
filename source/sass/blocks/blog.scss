@@ -32,6 +32,12 @@
   padding: 0 0 67px;
 }
 
+@media (max-width: $mobile-width) {
+  .blog p {
+    padding-bottom: 54px;
+  }
+}
+
 .blog a {
   @include fonts(16px, 20px);
   @include link();
@@ -57,6 +63,12 @@
     display: flex;
     flex-direction: column;
     gap: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .blog__wrapper {
+    margin-bottom: 20px;
   }
 }
 
@@ -108,8 +120,8 @@
   .blog__container .blog__article-wrapper {
     width: 100%;
     height: auto;
-    padding-bottom: 59px;
-    margin-top: 256px;
+    padding-bottom: 41px;
+    margin-top: 251px;
   }
 }
 

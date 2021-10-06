@@ -15,7 +15,8 @@
 
 @media (max-width: $mobile-width) {
   .footer-social li {
-    margin-right: 30px;
+    padding-left: 0;
+    margin-right: 26px;
   }
 }
 
@@ -41,4 +42,11 @@
 
 .footer-social a:active svg {
   fill-opacity: 0.3;
+}
+
+@media (max-width: $mobile-width) {
+  .footer-social svg {
+    height: 21px;
+    width: 20px;
+  }
 }

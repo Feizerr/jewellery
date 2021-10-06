@@ -21,7 +21,7 @@
 
 @media (max-width: $mobile-width) {
   .accordion__item {
-    padding: 22px;
+    padding: 20px;
   }
 }
 
@@ -51,7 +51,7 @@
 @media (max-width: $mobile-width) {
   .accordion h3 {
     @include fonts(16px, 22px);
-    padding-right: 45px;
+    padding-right: 63px;
   }
 }
 
@@ -59,7 +59,7 @@
   content: "";
   background-image: url("../img/down.svg");
   width: 23px;
-  height: 12px;
+  height: 14px;
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -109,6 +109,7 @@
 @media (max-width: $mobile-width) {
   .accordion p {
     @include fonts(14px, 19px);
+    width: 85%;
   }
 }
 
