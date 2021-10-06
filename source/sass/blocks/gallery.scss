@@ -3,6 +3,12 @@
   padding-bottom: 127px;
 }
 
+@media (max-width: $tablet-width) {
+  .gallery {
+    padding-bottom: 77px;
+  }
+}
+
 .gallery h2 {
   @include fonts(34px, 44px);
   font-family: "cormorantgaramond-bold", "Arial", sans-serif;
@@ -10,6 +16,14 @@
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .gallery h2 {
+    width: 70%;
+    padding-bottom: 21px;
+
+  }
 }
 
 .gallery p {
@@ -45,8 +59,9 @@
 
 @media (max-width: $tablet-width) {
   .gallery ul {
+    padding-left: 45px;
+    padding-right: 45px;
     row-gap: 21px;
-    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
   }
 }

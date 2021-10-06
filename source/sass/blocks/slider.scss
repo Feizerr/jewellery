@@ -21,9 +21,15 @@
   margin: -30px 0px 0px 0px;
   z-index: 10;
   font-size: 0;
-  width: 29px;
-  height: 9px;
+  width: 41px;
+  height: 17px;
   border: none;
+}
+
+@media (max-width: $tablet-width) {
+  .slider .slick-arrow {
+    top: -15%;
+  }
 }
 
 .slider .slick-arrow.slick-prev {
@@ -115,6 +121,12 @@
   padding: 17px 0 8px;
 }
 
+@media (max-width: $mobile-width) {
+  .slider h3 {
+    padding-top: 13px;
+  }
+}
+
 .slider p {
   @include fonts(14px, 18px);
   font-family: "poppins-bold", "Arial", sans-serif;
@@ -122,4 +134,10 @@
   text-align: center;
   margin: 0 auto;
   padding: 0 0 52px;
+}
+
+@media (max-width: $tablet-width) {
+  .slider p {
+    padding-bottom: 36px;
+  }
 }

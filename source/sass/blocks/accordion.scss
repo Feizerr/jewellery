@@ -13,6 +13,12 @@
   border-bottom: 1px solid $brown;
 }
 
+@media (max-width: $tablet-width) {
+  .accordion__item {
+    padding-bottom: 39px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .accordion__item {
     padding: 22px;
@@ -36,6 +42,12 @@
   cursor: pointer;
 }
 
+@media (max-width: $tablet-width) {
+  .accordion h3 {
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .accordion h3 {
     @include fonts(16px, 22px);
@@ -51,6 +63,12 @@
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .accordion h3::after {
+    right: 7px;
+  }
 }
 
 .accordion h3.active::after {
@@ -78,6 +96,14 @@
   font-family: "poppins-regular", "Arial", sans-serif;
   width: 59%;
   padding-left: 3px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .accordion p {
+    width: 92%;
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: $mobile-width) {

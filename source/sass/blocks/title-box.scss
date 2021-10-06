@@ -67,6 +67,12 @@
   padding-bottom: 9px;
 }
 
+@media (max-width: $tablet-width) {
+  .title-box--index h2 {
+    letter-spacing: 0.9px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .title-box--index h2 {
     @include fonts(38px, 49px);

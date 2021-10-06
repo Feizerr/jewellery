@@ -6,7 +6,7 @@
 
 @media (max-width: $tablet-width) {
   .blog {
-    padding: 0 45px 80px;
+    padding: 0 45px 16px;
   }
 }
 
@@ -100,6 +100,7 @@
   .blog__big-container .blog__article-wrapper {
     width: calc(100% - 339px);
     max-width: none;
+    padding-top: 85px;
   }
 }
 
@@ -209,6 +210,12 @@
   width: 57%;
   padding-bottom: 40px;
   margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+  .blog__container h3 {
+    width: 51%;
+  }
 }
 
 @media (max-width: $mobile-width) {
