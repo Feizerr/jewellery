@@ -168,7 +168,6 @@
   }
 }
 
-
 .blog__container time {
   @include offset(0, 0);
   @include fonts(14px, 18px);
@@ -219,7 +218,6 @@
   height: 300px;
   position: absolute;
 }
-
 
 @media (max-width: $mobile-width) {
   .blog__article-wrapper {

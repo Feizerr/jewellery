@@ -32,8 +32,8 @@
 }
 
 .header__form input::placeholder {
-  font-family: "poppins-medium", "Arial", sans-serif;
   @include fonts(14px, 21px);
+  font-family: "poppins-medium", "Arial", sans-serif;
 }
 
 .header__form input:hover {
@@ -154,7 +154,6 @@
   padding-bottom: 30px;
 }
 
-
 .header__additional-list a:not(.header__additional-special) {
   color: rgba($white, 0.75);
 }
@@ -219,4 +218,3 @@
 .header--active .header__additional-special {
   padding-top: 25px;
 }
-
