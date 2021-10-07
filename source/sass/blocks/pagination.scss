@@ -1,0 +1,18 @@
+.pagination,
+.pagination ul {
+  @include list-reset();
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__page-list {
+  display: flex;
+  width: min-content;
+}
+
+.pagination__page-list li:not(:last-child) {
+  padding-right: 15px;
+}

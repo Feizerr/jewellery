@@ -1,0 +1,40 @@
+.catalog {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.catalog__list {
+  @include list-reset();
+  display: grid;
+	column-gap: 20px;
+  row-gap: 60px;
+	grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 80px;
+}
+
+.catalog__list li {
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+
+.catalog__list h2 {
+  @include fonts(16px, 20px);
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 25px 0 15px;
+}
+
+.catalog__list p {
+  @include fonts(14px, 18px);
+  font-family: "poppins-bold", "Arial", sans-serif;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog__list img {
+  width: 100%;
+  height: auto;
+}

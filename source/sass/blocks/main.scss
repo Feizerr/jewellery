@@ -1,0 +1,13 @@
+.main__wrapper {
+  margin: 0 auto;
+  padding: 0 90px 80px;
+  display: flex;
+  max-width: 1170px;
+  box-sizing: border-box;
+}
+
+.main__wrapper a {
+  @include link();
+  color: $almost-black;
+  text-align: center;
+}
