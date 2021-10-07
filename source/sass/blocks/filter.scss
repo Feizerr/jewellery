@@ -1,4 +1,59 @@
 .filter {
   width: 250px;
-  margin-right: 50px;;
+  margin-right: 50px;
+}
+
+.filter ul {
+  @include list-reset();
+}
+
+.filter__accordion {
+  border: 1px solid $brown;
+  padding: 0 35px;
+  margin-bottom: 35px;
+}
+
+.filter__accordion-item {
+  @include fonts(16px, 20px);
+  margin: 0;
+  padding: 26px 0;
+  border: none;
+}
+
+.filter__button {
+  @include fonts(16px, 20px);
+  width: 100%;
+  padding: 28px;
+  border: none;
+}
+
+.filter__button-apply {
+  background-color: $brown;
+  color: $white;
+  margin-bottom: 35px;
+  border: none;
+
+  &:hover {
+    outline: 3px solid $brown;
+  }
+
+  &:active {
+    background-color: rgba($brown, 0.7);
+    outline: none;
+  }
+}
+
+.filter__button-clear {
+  background-color: $white;
+  color: $brown;
+  outline: 1px solid $brown;
+
+  &:hover {
+    outline: 3px solid $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.5);
+    outline: 3px solid rgba($brown, 0.5);
+  }
 }

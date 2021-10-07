@@ -38,3 +38,11 @@
   width: 100%;
   height: auto;
 }
+
+.catalog a:hover {
+  color: $brown;
+}
+
+.catalog a:active {
+  color: rgba($brown, 0.5);
+}
