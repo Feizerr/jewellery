@@ -25,7 +25,6 @@
   }
 }
 
-
 .modal-filter__form {
   max-width: 423px;
   position: relative;
@@ -62,7 +61,7 @@
   border: none;
   background-position: center;
   background-repeat: no-repeat;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: -18px;
@@ -91,7 +90,7 @@
 }
 
 .modal__container {
-  font-family: "poppins-medium", "Arial", sans-serif;
+  font-family: 'poppins-medium', 'Arial', sans-serif;
 }
 
 .modal__container legend {

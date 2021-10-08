@@ -45,7 +45,7 @@
 
 .catalog__list p {
   @include fonts(14px, 18px);
-  font-family: "poppins-bold", "Arial", sans-serif;
+  font-family: 'poppins-bold', 'Arial', sans-serif;
   max-width: 90%;
   margin: 0 auto;
   padding: 0;
@@ -59,13 +59,14 @@
 .catalog__link {
   text-decoration: none;
   color: $almost-black;
+  cursor: pointer;
 }
 
-.catalog a:hover {
+.catalog__link:hover {
   color: $brown;
 }
 
-.catalog a:active {
+.catalog__link:active {
   color: rgba($brown, 0.5);
 }
 
@@ -78,6 +79,15 @@
   color: $white;
   display: none;
   margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.catalog__show-button:hover {
+  opacity: 0.7;
+}
+
+.catalog__show-button:active {
+  opacity: 0.5;
 }
 
 @media (max-width: $tablet-width) {

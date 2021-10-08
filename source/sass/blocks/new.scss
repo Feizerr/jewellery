@@ -23,7 +23,7 @@
 .new h2 {
   @include fonts(34px, 44px);
   @include offset(0, 0);
-  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
   padding-bottom: 25px;
 }
 

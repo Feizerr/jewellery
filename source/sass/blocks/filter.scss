@@ -5,6 +5,17 @@
 
 @media (max-width: $tablet-width) {
   .filter {
+    width: 80%;
+    margin: 40px auto;
+  }
+}
+
+.filter__popup {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .filter__delete {
     display: none;
   }
 }
@@ -14,6 +25,7 @@
   width: 100%;
   padding: 28px;
   border: none;
+  cursor: pointer;
 }
 
 .filter__button-apply {
@@ -84,7 +96,7 @@
 
 
 .filter__accordion-item-header::after {
-  content: "";
+  content: '';
   background-image: url(../img/down.svg);
   background-repeat: no-repeat;
   width: 15px;
@@ -179,7 +191,7 @@
 }
 
 .filter__option label::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -189,7 +201,7 @@
 }
 
 .filter input:checked + label::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;

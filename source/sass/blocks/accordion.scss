@@ -32,7 +32,7 @@
 .accordion h3 {
   @include offset(0, 0);
   @include fonts(18px, 23px);
-  font-family: "poppins-medium", "Arial", sans-serif;
+  font-family: 'poppins-medium', 'Arial', sans-serif;
   width: 100%;
   text-align: left;
   padding-bottom: 5px;
@@ -56,8 +56,8 @@
 }
 
 .accordion h3::after {
-  content: "";
-  background-image: url("../img/down.svg");
+  content: '';
+  background-image: url('../img/down.svg');
   width: 23px;
   height: 14px;
   background-repeat: no-repeat;
@@ -72,8 +72,8 @@
 }
 
 .accordion h3.active::after {
-  content: "";
-  background-image: url("../img/up.svg");
+  content: '';
+  background-image: url('../img/up.svg');
   width: 23px;
   height: 14px;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@
 .accordion__item-body p {
   @include offset(0, 0);
   @include fonts(16px, 20px);
-  font-family: "poppins-regular", "Arial", sans-serif;
+  font-family: 'poppins-regular', 'Arial', sans-serif;
   width: 59%;
   padding-left: 3px;
 }

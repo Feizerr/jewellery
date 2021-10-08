@@ -18,7 +18,7 @@
 
 .blog h2 {
   @include fonts(34px, 44px);
-  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
   padding: 0 0 21px;
   max-width: 50%;
   margin: 0 auto;
@@ -152,55 +152,55 @@
 }
 
 .blog__care {
-  background-image: url("../img/jess-harper-sunday-desktop.jpg");
+  background-image: url('../img/jess-harper-sunday-desktop.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/jess-harper-sunday-desktop@2x.jpg");
+    background-image: url('../img/jess-harper-sunday-desktop@2x.jpg');
   }
 }
 
 @media (max-width: $tablet-width) {
   .blog__care {
-    background-image: url("../img/jess.jpg");
+    background-image: url('../img/jess.jpg');
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/jess@2x.jpg");
+      background-image: url('../img/jess@2x.jpg');
     }
   }
 }
 
 .blog__cristall {
-  background-image: url("../img/alex-holyoake-desktop.jpg");
+  background-image: url('../img/alex-holyoake-desktop.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/alex-holyoake-desktop@2x.jpg");
+    background-image: url('../img/alex-holyoake-desktop@2x.jpg');
   }
 }
 
 @media (max-width: $tablet-width) {
   .blog__cristall {
-    background-image: url("../img/alex.jpg");
+    background-image: url('../img/alex.jpg');
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/alex@2x.jpg");
+      background-image: url('../img/alex@2x.jpg');
     }
   }
 }
 
 .blog__trends {
-  background-image: url("../img/alve-odonnell-desktop.jpg");
+  background-image: url('../img/alve-odonnell-desktop.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/alve-odonnell-desktop@2x.jpg");
+    background-image: url('../img/alve-odonnell-desktop@2x.jpg');
   }
 }
 
 @media (max-width: $tablet-width) {
   .blog__trends {
-    background-image: url("../img/alve.jpg");
+    background-image: url('../img/alve.jpg');
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/alve@2x.jpg");
+      background-image: url('../img/alve@2x.jpg');
     }
   }
 }
@@ -217,7 +217,7 @@
 .blog__container h3 {
   @include offset(0, 0);
   @include fonts(26px, 33px);
-  font-family: "cormorantgaramond-semibold", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-semibold', 'Arial', sans-serif;
   text-align: center;
   width: 57%;
   padding-bottom: 40px;

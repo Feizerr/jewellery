@@ -1,450 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Онлайн-магазин ювелирных украшений CN">
-  <meta name="Keywords" content="ювелирные украшения, серьги, кольца, браслеты, золото">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <meta name='description' content='Онлайн-магазин ювелирных украшений CN'>
+  <meta name='Keywords' content='ювелирные украшения, серьги, кольца, браслеты, золото'>
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel='stylesheet' href='css/style.min.css'>
 </head>
 
-<body class="body">
-  <div class="page">
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="header__container">
-          <form class="header__form">
+<body class='body'>
+  <div class='page'>
+    <header class='header'>
+      <div class='header__wrapper'>
+        <div class='header__container'>
+          <form class='header__form'>
             <label>
-              <svg width="14" height="14" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite_auto.svg#icon-search" x="0" y="0"></use>
+              <svg width='14' height='14' aria-hidden='true' focusable='false'>
+                <use xlink:href='img/sprite_auto.svg#icon-search' x='0' y='0'></use>
               </svg>
-              <input type="search" id="search" placeholder="Type here to search">
+              <input type='search' id='search' placeholder='Type here to search'>
             </label>
           </form>
-          <button class="header__toggle" type="button" aria-label="Открыть или закрыть меню">
-            <span class="visually-hidden">Открыть меню</span>
+          <button class='header__toggle' type='button' aria-label='Открыть или закрыть меню'>
+            <span class='visually-hidden'>Открыть меню</span>
           </button>
-          <a href="index.html" class="header__logo logo">
-            <svg width="66" height="66">
-              <use xlink:href="img/sprite_auto.svg#icon-logo" x="0" y="0"></use>
+          <a href='index.html' class='header__logo logo'>
+            <svg width='66' height='66'>
+              <use xlink:href='img/sprite_auto.svg#icon-logo' x='0' y='0'></use>
             </svg>
           </a>
-          <div class="header__users-links">
-            <a class="header__login" href="login.html">Login</a>
-            <a class="header__cart" href="#">
-              <svg width="20" height="18" aria-hidden="true">
-                <use xlink:href="img/sprite_auto.svg#icon-bag" x="0" y="0"></use>
+          <div class='header__users-links'>
+            <a class='header__login' href='login.html'>Login</a>
+            <a class='header__cart' href='#'>
+              <svg width='20' height='18' aria-hidden='true'>
+                <use xlink:href='img/sprite_auto.svg#icon-bag' x='0' y='0'></use>
               </svg>
               <span>Cart</span>
-              <span class="header__items-in-cart"> 0</span>
+              <span class='header__items-in-cart'> 0</span>
             </a>
           </div>
         </div>
-        <nav class="navigation header__navigation navigation__nojs">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#">What’s new</a>
+        <nav class='navigation header__navigation navigation__nojs'>
+          <ul class='navigation__list'>
+            <li class='navigation__item'>
+              <a href='#'>What’s new</a>
             </li>
-            <li class="navigation__item">
-              <a href="#">Chokers</a>
+            <li class='navigation__item'>
+              <a href='#'>Chokers</a>
             </li>
-            <li class="navigation__item">
-              <a href="#">Necklaces</a>
+            <li class='navigation__item'>
+              <a href='#'>Necklaces</a>
             </li>
-            <li class="navigation__item">
-              <a href="#">Rings</a>
+            <li class='navigation__item'>
+              <a href='#'>Rings</a>
             </li>
-            <li class="navigation__item">
-              <a href="#">Earrings</a>
+            <li class='navigation__item'>
+              <a href='#'>Earrings</a>
             </li>
           </ul>
 
         </nav>
-        <ul class="navigation__list header__additional-list">
-          <li class="navigation__item">
-            <a href="#">About CH</a>
+        <ul class='navigation__list header__additional-list'>
+          <li class='navigation__item'>
+            <a href='#'>About CH</a>
           </li>
-          <li class="navigation__item">
-            <a href="#">Stores & Hours</a>
+          <li class='navigation__item'>
+            <a href='#'>Stores & Hours</a>
           </li>
-          <li class="navigation__item">
-            <a href="#">Contact Us</a>
+          <li class='navigation__item'>
+            <a href='#'>Contact Us</a>
           </li>
-          <li class="navigation__item">
-            <a class="header__additional-special" href="#">Login</a>
+          <li class='navigation__item'>
+            <a class='header__additional-special' href='#'>Login</a>
           </li>
         </ul>
       </div>
     </header>
 
-    <main class="main">
-      <h1 class="visually-hidden">The best jewellery for you. CH</h1>
-      <section class="title-box title-box--catalog">
-        <div class="title-box__wrapper title-box__wrapper--catalog">
+    <main class='main'>
+      <h1 class='visually-hidden'>The best jewellery for you. CH</h1>
+      <section class='title-box title-box--catalog'>
+        <div class='title-box__wrapper title-box__wrapper--catalog'>
           <h2>ALL JEWELLERY</h2>
           <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
         </div>
       </section>
-      <div class="main__wrapper">
-        <section class="filter">
-          <form class="fitler__form">
+      <div class='main__wrapper'>
+        <section class='filter' id='main-filter'>
+          <form class='fitler__form'>
             <!-- Здесь начинается аккордеон -->
-            <div class="filter__accordion">
+            <div class='filter__accordion'>
                <!-- Первый бокс -->
               <fieldset class='filter__accordion-item product'>
-                <legend class="filter__accordion-item-header">Product</legend>
+                <legend class='filter__accordion-item-header'>Product</legend>
                 <div class='filter__accordion-item-body filter__accordion-no-js'>
                   <ul class='filter__accordion-item-content'>
-                    <li class="filter__option">
-                      <input class="visually-hidden" type="checkbox" name="necklaces" id="filter-necklaces" checked>
-                      <label for="filter-necklaces">Necklaces</label>
+                    <li class='filter__option'>
+                      <input class='visually-hidden' type='checkbox' name='necklaces' id='filter-necklaces' checked>
+                      <label for='filter-necklaces'>Necklaces</label>
                     </li>
-                    <li class="filter__option">
-                      <input class="visually-hidden" type="checkbox" name="chokers" id="filter-chokers" checked>
-                      <label for="filter-chokers">Chokers</label>
+                    <li class='filter__option'>
+                      <input class='visually-hidden' type='checkbox' name='chokers' id='filter-chokers' checked>
+                      <label for='filter-chokers'>Chokers</label>
                     </li>
-                    <li class="filter__option">
-                      <input class="visually-hidden" type="checkbox" name="rings" id="filter-rings">
-                      <label for="filter-rings">Rings</label>
+                    <li class='filter__option'>
+                      <input class='visually-hidden' type='checkbox' name='rings' id='filter-rings'>
+                      <label for='filter-rings'>Rings</label>
                     </li>
-                    <li class="filter__option">
-                      <input class="visually-hidden" type="checkbox" name="earrings" id="filter-earrings" checked>
-                      <label for="filter-earrings">Earrings</label>
+                    <li class='filter__option'>
+                      <input class='visually-hidden' type='checkbox' name='earrings' id='filter-earrings' checked>
+                      <label for='filter-earrings'>Earrings</label>
                     </li>
                   </ul>
                 </div>
               </fieldset>
                  <!-- 2 бокс -->
                 <fieldset class='filter__accordion-item material'>
-                  <legend class="filter__accordion-item-header">Material</legend>
+                  <legend class='filter__accordion-item-header'>Material</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <ul class='filter__accordion-item-content filter__accordion-container-list'>
-                      <li class="filter__option">
-                        <input class="visually-hidden" type="checkbox" name="gold" id="filter-gold" checked>
-                        <label for="filter-gold">Gold</label>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='gold' id='filter-gold' checked>
+                        <label for='filter-gold'>Gold</label>
                       </li>
-                      <li class="filter__option">
-                        <input class="visually-hidden" type="checkbox" name="platinum" id="filter-platinum" checked>
-                        <label for="filter-platinum">Platinum</label>
-                      </li>
-                      <li class="filter__option">
-                        <input class="visually-hidden" type="checkbox" name="
-                        silver" id="filter-silver">
-                        <label for="filter-silver">Silver</label>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='
+                        silver' id='filter-silver'>
+                        <label for='filter-silver'>Silver</label>
                       </li>
                     </ul>
                   </div>
                 </fieldset>
                    <!-- 3 бокс -->
                 <fieldset class='filter__accordion-item collection'>
-                  <legend class="filter__accordion-item-header">Collection</legend>
+                  <legend class='filter__accordion-item-header'>Collection</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <ul class='filter__accordion-item-content filter__accordion-container-list'>
-                      <li class="filter__option">
-                        <input class="visually-hidden" type="checkbox" name="new" id="filter-new" checked>
-                        <label for="filter-new">New</label>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='new' id='filter-new' checked>
+                        <label for='filter-new'>Pink flamingo</label>
                       </li>
-                      <li class="filter__option">
-                        <input class="visually-hidden" type="checkbox" name="traditional" id="filter-traditional" checked>
-                        <label for="filter-traditional">Traditional</label>
-                      </li>
-                      <li class="filter__option">
-                        <input class="visually-hidden" type="checkbox" name="sale" id="filter-sale">
-                        <label for="filter-sale">Sale</label>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='traditional' id='filter-traditional' checked>
+                        <label for='filter-traditional'>Dreams</label>
                       </li>
                     </ul>
                   </div>
                 </fieldset>
                     <!-- 4 бокс -->
                 <fieldset class='filter__accordion-item price'>
-                  <legend class="filter__accordion-item-header">Price</legend>
+                  <legend class='filter__accordion-item-header'>Price</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <div class='filter__accordion-item-content filter__accordion-container-list'>
-                      <div class="filter__range-filter">
-                        <div class="filter__range-controls">
-                          <div class="filter__scale">
-                            <div class="filter__bar"></div>
+                      <div class='filter__range-filter'>
+                        <div class='filter__range-controls'>
+                          <div class='filter__scale'>
+                            <div class='filter__bar'></div>
                           </div>
-                          <div class="filter__toggle filter__toggle-min" tabindex="0"></div>
-                          <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
+                          <div class='filter__toggle filter__toggle-min' tabindex='0'></div>
+                          <div class='filter__toggle filter__toggle-max' tabindex='0'></div>
                         </div>
-                        <div class="filter__price-controls">
-                          <input type="number" id="min-price" name="min-price" value="55" class="visually-hidden">
-                          <label for="min-price">$55</label>
-                          <input type="number" id="max-price" name="max-price" value="155" class="visually-hidden">
-                          <label for="max-price">$155</label>
+                        <div class='filter__price-controls'>
+                          <input type='number' id='min-price' name='min-price' value='55' class='visually-hidden'>
+                          <label for='min-price'>$55</label>
+                          <input type='number' id='max-price' name='max-price' value='155' class='visually-hidden'>
+                          <label for='max-price'>$155</label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </fieldset>
               </div>
-              <button class="filter__button filter__button-apply" aria-label="Show filtered items" type="submit">Apply</button>
-              <button aria-label="Cancel" type="submit" class="filter__button filter__button-clear">Clear All</button>
+              <button class='filter__button filter__button-apply' aria-label='Show filtered items' type='submit'>Apply</button>
+              <button aria-label='Cancel' type='submit' class='filter__button filter__button-clear'>Clear All</button>
           </form>
         </section>
-        <section class="catalog">
-          <a class="catalog__show-button" href="#">Filter</a>
-          <ul class="catalog__list">
+        <section class='catalog'>
+          <a class='catalog__show-button' href='#main-filter'>Filter</a>
+          <ul class='catalog__list'>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/.double-pearl-earringswebp 1x, img/double-pearl-earrings@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/double-pearl-earrings.jpg" srcset='img/double-pearl-earrings@2x.jpg 2x' alt="Double pearl earrings " width="270" height="272">
+                  <img loading='lazy' src='img/double-pearl-earrings.jpg' srcset='img/double-pearl-earrings@2x.jpg 2x' alt='Double pearl earrings ' width='270' height='272'>
                 </picture>
                 <h2>Double pearl earrings </h2>
                 <p>$ 115</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/black-choker-gold-bead.jpg" srcset='img/black-choker-gold-bead@2x.jpg 2x' alt="Choker with gold bead" width="270" height="272">
+                  <img loading='lazy' src='img/black-choker-gold-bead.jpg' srcset='img/black-choker-gold-bead@2x.jpg 2x' alt='Choker with gold bead' width='270' height='272'>
                 </picture>
                 <h2>Choker with gold bead</h2>
                 <p>$ 55</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/gold-layered-necklace.jpg" srcset='img/gold-layered-necklace@2x.jpg 2x' alt="Gold layered necklace" width="270" height="272">
+                  <img loading='lazy' src='img/gold-layered-necklace.jpg' srcset='img/gold-layered-necklace@2x.jpg 2x' alt='Gold layered necklace' width='270' height='272'>
                 </picture>
                 <h2>Gold layered necklace</h2>
                 <p>$ 155</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/blue-gemstone-pendant.jpg" srcset='img/blue-gemstone-pendant@2x.jpg 2x' alt="Blue gemstone pendant" width="270" height="272">
+                  <img loading='lazy' src='img/blue-gemstone-pendant.jpg' srcset='img/blue-gemstone-pendant@2x.jpg 2x' alt='Blue gemstone pendant' width='270' height='272'>
                 </picture>
                 <h2>Blue gemstone pendant</h2>
                 <p>$ 105</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/boho-earrings.jpg" srcset='img/boho-earrings@2x.jpg 2x' alt="Boho earrings" width="270" height="272">
+                  <img loading='lazy' src='img/boho-earrings.jpg' srcset='img/boho-earrings@2x.jpg 2x' alt='Boho earrings' width='270' height='272'>
                 </picture>
                 <h2>Boho earrings</h2>
                 <p>$ 75</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/bird-necklace.jpg" srcset='img/bird-necklace@2x.jpg 2x' alt="Gold bird necklace" width="270" height="272">
+                  <img loading='lazy' src='img/bird-necklace.jpg' srcset='img/bird-necklace@2x.jpg 2x' alt='Gold bird necklace' width='270' height='272'>
                 </picture>
                 <h2>Gold bird necklace</h2>
                 <p>$ 135</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/black-leather-choker-necklace.jpg" srcset='img/black-leather-choker-necklace@2x.jpg 2x' alt="Black leather choker" width="270" height="272">
+                  <img loading='lazy' src='img/black-leather-choker-necklace.jpg' srcset='img/black-leather-choker-necklace@2x.jpg 2x' alt='Black leather choker' width='270' height='272'>
                 </picture>
                 <h2>Black leather choker</h2>
                 <p>$ 85</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/purple-gemstone-necklace.jpg" srcset='img/purple-gemstone-necklace@2x.jpg 2x' alt="Necklace with amethyst" width="270" height="272">
+                  <img loading='lazy' src='img/purple-gemstone-necklace.jpg' srcset='img/purple-gemstone-necklace@2x.jpg 2x' alt='Necklace with amethyst' width='270' height='272'>
                 </picture>
                 <h2>Necklace with amethyst</h2>
                 <p>$ 145</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/elephant-earrings.jpg" srcset='img/elephant-earrings@2x.jpg 2x' alt="Elephant earrings" width="270" height="272">
+                  <img loading='lazy' src='img/elephant-earrings.jpg' srcset='img/elephant-earrings@2x.jpg 2x' alt='Elephant earrings' width='270' height='272'>
                 </picture>
                 <h2>Elephant earrings</h2>
                 <p>$ 95</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/threader-necklace-closeup.jpg" srcset='img/threader-necklace-closeup@2x.jpg 2x' alt="Threader necklace" width="270" height="272">
+                  <img loading='lazy' src='img/threader-necklace-closeup.jpg' srcset='img/threader-necklace-closeup@2x.jpg 2x' alt='Threader necklace' width='270' height='272'>
                 </picture>
                 <h2>Threader necklace</h2>
                 <p>$ 115</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/origami-crane-necklace.jpg" srcset='img/origami-crane-necklace@2x.jpg 2x' alt="Origami crane necklace" width="270" height="272">
+                  <img loading='lazy' src='img/origami-crane-necklace.jpg' srcset='img/origami-crane-necklace@2x.jpg 2x' alt='Origami crane necklace' width='270' height='272'>
                 </picture>
                 <h2>Origami crane necklace</h2>
                 <p>$ 105</p>
               </a>
             </li>
             <li>
-              <a class="catalog__link" href="#">
+              <a class='catalog__link' href='#'>
                 <picture>
                   <!-- <source type='image/webp' srcset='img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x'> -->
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src="img/marble-earrings.jpg" srcset='img/marble-earrings@2x.jpg 2x' alt="Marble earrings" width="270" height="272">
+                  <img loading='lazy' src='img/marble-earrings.jpg' srcset='img/marble-earrings@2x.jpg 2x' alt='Marble earrings' width='270' height='272'>
                 </picture>
                 <h2>Marble earrings</h2>
                 <p>$ 95</p>
               </a>
             </li>
           </ul>
-          <ul class="pagination">
-            <li class="pagination__item pagination__previous-page">
-              <a class="pagination__button" href="#">Previous</a>
+          <ul class='pagination'>
+            <li class='pagination__item pagination__previous-page'>
+              <a class='pagination__button' href='#'>Previous</a>
             </li>
-            <ul class="pagination__item pagination__page-list">
+            <ul class='pagination__item pagination__page-list'>
               <li>
-                <a class="pagination__link pagination__link--active">1</a>
+                <a class='pagination__link pagination__link--active'>1</a>
               </li>
               <li>
-                <a class="pagination__link" href="#">2</a>
+                <a class='pagination__link' href='#'>2</a>
               </li>
               <li>
-                <a class="pagination__link" href="#">3</a>
+                <a class='pagination__link' href='#'>3</a>
               </li>
               <li>
-                <a class="pagination__link" href="#">4</a>
+                <a class='pagination__link' href='#'>4</a>
               </li>
               <li>
-                <a class="pagination__link" href="#">5</a>
+                <a class='pagination__link' href='#'>5</a>
               </li>
             </ul>
-            <li class="pagination__item pagination__next-page">
-              <a class="pagination__button" href="#">Next</a>
+            <li class='pagination__item pagination__next-page'>
+              <a class='pagination__button' href='#'>Next</a>
             </li>
           </ul>
         </section>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <section class="subscribe">
+    <footer class='footer'>
+      <div class='footer__wrapper'>
+        <section class='subscribe'>
           <h2>The good stuff in your inbox </h2>
           <p>News and updates from CH. No spam, we promise.</p>
-          <form class='subscribe__form' action='https://echo.htmlacademy.ru/' method='post' autocomplete="off">
+          <form class='subscribe__form' action='https://echo.htmlacademy.ru/' method='post' autocomplete='off'>
             <label for='mail'>
               <input type='email' name='mail' placeholder='Your E-mail' id='mail' required>
             </label>
-            <button type="submit" class="subscribe__button">Sign Up
-              <svg width="29" height="9" aria-hidden="true" focusable="false">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow-right" x="0" y="0"></use>
+            <button type='submit' class='subscribe__button'>Sign Up
+              <svg width='29' height='9' aria-hidden='true' focusable='false'>
+                <use xlink:href='img/sprite_auto.svg#icon-arrow-right' x='0' y='0'></use>
               </svg>
             </button>
           </form>
         </section>
-        <section class="about-ordering">
+        <section class='about-ordering'>
           <ul>
             <li>
-              <a href="#">
+              <a href='#'>
                 Ordering & Payment
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href='#'>
                 Terms & Conditions
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href='#'>
                 Returns & Exchanges
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href='#'>
                 Delivery
               </a>
             </li>
           </ul>
         </section>
-        <section class="about-company">
+        <section class='about-company'>
           <ul>
             <li>
-              <a href="#">
+              <a href='#'>
                 About CH
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href='#'>
                 Stores & Hours
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href='#'>
                 Jobs
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href='#'>
                 Contact Us
               </a>
             </li>
           </ul>
         </section>
-        <section class="footer-social">
+        <section class='footer-social'>
           <ul>
             <li>
-              <a href="#">
-                <svg width="8" height="15">
-                  <use xlink:href="img/sprite_auto.svg#icon-fb" x="0" y="0"></use>
+              <a href='#'>
+                <svg width='8' height='15'>
+                  <use xlink:href='img/sprite_auto.svg#icon-fb' x='0' y='0'></use>
                 </svg>
                 <span>Facebook</span>
               </a>
             </li>
             <li>
-              <a href="#">
-                <svg width="15" height="15">
-                  <use xlink:href="img/sprite_auto.svg#icon-insta" x="0" y="0"></use>
+              <a href='#'>
+                <svg width='15' height='15'>
+                  <use xlink:href='img/sprite_auto.svg#icon-insta' x='0' y='0'></use>
                 </svg>
                 <span>Instagram</span>
               </a>
             </li>
             <li>
-              <a href="#">
-                <svg width="15" height="15">
-                  <use xlink:href="img/sprite_auto.svg#icon-pinterest" x="0" y="0"></use>
+              <a href='#'>
+                <svg width='15' height='15'>
+                  <use xlink:href='img/sprite_auto.svg#icon-pinterest' x='0' y='0'></use>
                 </svg>
                 <span>Pinterest</span>
               </a>
             </li>
             <li>
-              <a href="#">
-                <svg width="15" height="13">
-                  <use xlink:href="img/sprite_auto.svg#icon-twitter" x="0" y="0"></use>
+              <a href='#'>
+                <svg width='15' height='13'>
+                  <use xlink:href='img/sprite_auto.svg#icon-twitter' x='0' y='0'></use>
                 </svg>
                 <span>Twitter</span>
               </a>
@@ -455,112 +447,104 @@
     </footer>
 
   </div>
-    <section class="filter filter__popup">
-      <form class="fitler__form modal-filter__form">
+    <section class='filter filter__popup'>
+      <form class='fitler__form modal-filter__form'>
       <!-- Здесь начинается аккордеон -->
-      <div class="filter__accordion modal__container">
+      <div class='filter__accordion modal__container'>
           <!-- Первый бокс -->
         <fieldset class='filter__accordion-item product'>
-          <legend class="filter__accordion-item-header">Product</legend>
+          <legend class='filter__accordion-item-header'>Product</legend>
           <div class='filter__accordion-item-body filter__accordion-no-js'>
             <ul class='filter__accordion-item-content'>
 
-              <li class="filter__option">
-                <input class="visually-hidden" type="checkbox" name="necklaces" id="filter-necklaces" checked>
-                <label for="filter-necklaces">Necklaces</label>
+              <li class='filter__option'>
+                <input class='visually-hidden' type='checkbox' name='necklaces' id='filter-necklaces' checked>
+                <label for='filter-necklaces'>Necklaces</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden" type="checkbox" name="chokers" id="modal-filter-chokers" checked>
-                <label for="modal-filter-chokers">Chokers</label>
+              <li class='filter__option'>
+                <input class='visually-hidden' type='checkbox' name='chokers' id='modal-filter-chokers' checked>
+                <label for='modal-filter-chokers'>Chokers</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden" type="checkbox" name="rings" id="modal-filter-rings">
-                <label for="modal-filter-rings">Rings</label>
+              <li class='filter__option'>
+                <input class='visually-hidden' type='checkbox' name='rings' id='modal-filter-rings'>
+                <label for='modal-filter-rings'>Rings</label>
               </li>
-              <li class="filter__option">
-                <input class="visually-hidden" type="checkbox" name="earrings" id="modal-filter-earrings" checked>
-                <label for="modal-filter-earrings">Earrings</label>
+              <li class='filter__option'>
+                <input class='visually-hidden' type='checkbox' name='earrings' id='modal-filter-earrings' checked>
+                <label for='modal-filter-earrings'>Earrings</label>
               </li>
             </ul>
           </div>
         </fieldset>
             <!-- 2 бокс -->
           <fieldset class='filter__accordion-item material'>
-            <legend class="filter__accordion-item-header">Material</legend>
+            <legend class='filter__accordion-item-header'>Material</legend>
             <div class='filter__accordion-item-body filter__accordion-no-js'>
               <ul class='filter__accordion-item-content filter__accordion-container-list'>
-                <li class="filter__option">
-                  <input class="visually-hidden" type="checkbox" name="gold" id="modal-filter-gold" checked>
-                  <label for="modal-filter-gold">Gold</label>
+                <li class='filter__option'>
+                  <input class='visually-hidden' type='checkbox' name='gold' id='modal-filter-gold' checked>
+                  <label for='modal-filter-gold'>Gold</label>
                 </li>
-                <li class="filter__option">
-                  <input class="visually-hidden" type="checkbox" name="platinum" id="modal-filter-platinum" checked>
-                  <label for="modal-filter-platinum">Platinum</label>
-                </li>
-                <li class="filter__option">
-                  <input class="visually-hidden" type="checkbox" name="silver" id="modal-filter-silver">
-                  <label for="modal-filter-silver">Silver</label>
+                <li class='filter__option'>
+                  <input class='visually-hidden' type='checkbox' name='silver' id='modal-filter-silver'>
+                  <label for='modal-filter-silver'>Silver</label>
                 </li>
               </ul>
             </div>
           </fieldset>
               <!-- 3 бокс -->
           <fieldset class='filter__accordion-item collection'>
-            <legend class="filter__accordion-item-header">Collection</legend>
+            <legend class='filter__accordion-item-header'>Collection</legend>
             <div class='filter__accordion-item-body filter__accordion-no-js'>
               <ul class='filter__accordion-item-content filter__accordion-container-list'>
-                <li class="filter__option">
-                  <input class="visually-hidden" type="checkbox" name="new" id="modal-filter-new" checked>
-                  <label for="modal-filter-new">New</label>
+                <li class='filter__option'>
+                  <input class='visually-hidden' type='checkbox' name='new' id='modal-filter-new' checked>
+                  <label for='modal-filter-new'>Pink flamingo</label>
                 </li>
-                <li class="filter__option">
-                  <input class="visually-hidden" type="checkbox" name="traditional" id="modal-filter-traditional" checked>
-                  <label for="modal-filter-traditional">Traditional</label>
-                </li>
-                <li class="filter__option">
-                  <input class="visually-hidden" type="checkbox" name="sale" id="modal-filter-sale">
-                  <label for="modal-filter-sale">Sale</label>
+                <li class='filter__option'>
+                  <input class='visually-hidden' type='checkbox' name='traditional' id='modal-filter-traditional' checked>
+                  <label for='modal-filter-traditional'>Dreams</label>
                 </li>
               </ul>
             </div>
           </fieldset>
               <!-- 4 бокс -->
           <fieldset class='filter__accordion-item price'>
-            <legend class="filter__accordion-item-header">Price</legend>
+            <legend class='filter__accordion-item-header'>Price</legend>
             <div class='filter__accordion-item-body filter__accordion-no-js'>
               <div class='filter__accordion-item-content filter__accordion-container-list'>
-                <div class="filter__range-filter">
-                  <div class="filter__range-controls">
-                    <div class="filter__scale">
-                      <div class="filter__bar"></div>
+                <div class='filter__range-filter'>
+                  <div class='filter__range-controls'>
+                    <div class='filter__scale'>
+                      <div class='filter__bar'></div>
                     </div>
-                    <div class="filter__toggle filter__toggle-min" tabindex="0"></div>
-                    <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
+                    <div class='filter__toggle filter__toggle-min' tabindex='0'></div>
+                    <div class='filter__toggle filter__toggle-max' tabindex='0'></div>
                   </div>
-                  <div class="filter__price-controls">
-                    <input type="number" id="modal-min-price" name="min-price" value="55" class="visually-hidden">
-                    <label for="modal-min-price">$55</label>
-                    <input type="number" id="modal-max-price" name="max-price" value="155" class="visually-hidden">
-                    <label for="modal-max-price">$155</label>
+                  <div class='filter__price-controls'>
+                    <input type='number' id='modal-min-price' name='min-price' value='55' class='visually-hidden'>
+                    <label for='modal-min-price'>$55</label>
+                    <input type='number' id='modal-max-price' name='max-price' value='155' class='visually-hidden'>
+                    <label for='modal-max-price'>$155</label>
                   </div>
                 </div>
               </div>
             </div>
           </fieldset>
         </div>
-        <button class="filter__button filter__button-apply modal-filter__button" aria-label="Show filtered items" type="submit">Apply</button>
-        <button aria-label="Cancel" type="submit" class="filter__button filter__button-clear modal-filter__button">Clear All</button>
-        <button class="modal-filter__close-button" aria-label="Close the filter"></button>
+        <button class='filter__button filter__button-apply modal-filter__button' aria-label='Show filtered items' type='submit'>Apply</button>
+        <button aria-label='Cancel' type='submit' class='filter__button filter__button-clear modal-filter__button'>Clear All</button>
+        <button class='modal-filter__close-button' aria-label='Close the filter'></button>
       </form>
 
     </section>
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
   <!-- слайдер Slick -->
-  <script src="js/slick.min.js"></script>
+  <script src='js/slick.min.js'></script>
   <!-- файл скриптов -->
-  <script src="js/script.js"></script>
+  <script src='js/script.js'></script>
 </body>
 
 </html>

@@ -15,10 +15,9 @@
   }
 }
 
-
 .gallery h2 {
   @include fonts(34px, 44px);
-  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
   padding: 0 0 30px;
   max-width: 50%;
   margin: 0 auto;
@@ -166,57 +165,57 @@
 }
 
 .gallery__square {
-  background-image: url("../img/inst-desktop.jpg");
+  background-image: url('../img/inst-desktop.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/inst-desktop@2x.jpg");
+    background-image: url('../img/inst-desktop@2x.jpg');
   }
 }
 
 .gallery__large {
-  background-image: url("../img/woman.jpg");
+  background-image: url('../img/woman.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/woman@2x.jpg");
+    background-image: url('../img/woman@2x.jpg');
   }
 }
 
 .gallery__bracelet {
-  background-image: url("../img/ring.jpg");
+  background-image: url('../img/ring.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/ring@2x.jpg");
+    background-image: url('../img/ring@2x.jpg');
   }
 }
 
 .gallery__round {
-  background-image: url("../img/ring-earning.jpg");
+  background-image: url('../img/ring-earning.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/ring-earnung@2x.jpg");
+    background-image: url('../img/ring-earnung@2x.jpg');
   }
 }
 
 .gallery__brown {
-  background-image: url("../img/brown.jpg");
+  background-image: url('../img/brown.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/brown@2x.jpg");
+    background-image: url('../img/brown@2x.jpg');
   }
 }
 
 .gallery__sea {
-  background-image: url("../img/sea.jpg");
+  background-image: url('../img/sea.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/sea@2x.jpg");
+    background-image: url('../img/sea@2x.jpg');
   }
 }
 
 .gallery__rings {
-  background-image: url("../img/green.jpg");
+  background-image: url('../img/green.jpg');
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/green@2x.jpg");
+    background-image: url('../img/green@2x.jpg');
   }
 }
