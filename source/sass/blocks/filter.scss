@@ -7,19 +7,6 @@
   @include list-reset();
 }
 
-.filter__accordion {
-  border: 1px solid $brown;
-  padding: 0 35px;
-  margin-bottom: 35px;
-}
-
-.filter__accordion-item {
-  @include fonts(16px, 20px);
-  margin: 0;
-  padding: 26px 0;
-  border: none;
-}
-
 .filter__button {
   @include fonts(16px, 20px);
   width: 100%;
@@ -56,4 +43,52 @@
     color: rgba($brown, 0.5);
     outline: 3px solid rgba($brown, 0.5);
   }
+}
+
+.filter__accordion {
+  border: 1px solid $brown;
+  padding: 0;
+  margin: 0 auto 35px;
+}
+
+.filter__accordion-item {
+  @include fonts(16px, 20px);
+  margin: 0;
+  padding: 0 26px 25px;
+  border: none;
+}
+
+.filter__accordion-item:not(:last-child) {
+  border-bottom: 1px solid $brown;
+}
+
+.filter__accordion-item-header {
+  @include fonts(16px, 21px);
+  padding-top: 25px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.filter__accordion-item-header::after {
+  content: "";
+  background-image: url(../img/down.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 8px;
+  position: absolute;
+  background-position:bottom;
+  right: 0;
+}
+
+.filter__accordion-item-header.active::after {
+  background-image: url(../img/up.svg);
+  background-position: top;
+}
+
+.filter__accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
 }

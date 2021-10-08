@@ -74,6 +74,48 @@ accordionItemHeaders.forEach(function (accordionItemHeader) {
 
 
 
+
+
+
+
+
+// accordion
+
+
+var filterItemHeaders = document.querySelectorAll('.filter__accordion-item > legend');
+var filterItemsBody = document.querySelectorAll('.filter__accordion-item-body');
+
+filterItemsBody.forEach(function (accordionItem) {
+  accordionItem.classList.remove('accordion__no-js');
+})
+
+var useFilter = function (element) {
+  var currentlyFilterActiveItemHeader = document.querySelector('.filter__accordion-item > legend.active');
+  if (currentlyFilterActiveItemHeader && currentlyFilterActiveItemHeader !== element) {
+    currentlyFilterActiveItemHeader.classList.toggle('active');
+    currentlyFilterActiveItemHeader.nextElementSibling.style.maxHeight = minHeight;
+  }
+
+  element.classList.toggle('active');
+  var filterItemBody = element.nextElementSibling;
+  if (element.classList.contains('active')) {
+    filterItemBody.style.maxHeight = filterItemBody.scrollHeight + padding + 'px';
+  } else {
+    filterItemBody.style.maxHeight = minHeight;
+  }
+};
+
+filterItemHeaders.forEach(function (accordionItemHeader) {
+  accordionItemHeader.addEventListener('click', function () {
+    useFilter(accordionItemHeader);
+  });
+
+  accordionItemHeader.addEventListener('keydown', function () {
+    useFilter(accordionItemHeader);
+  });
+})
+
+
 //slider
 
 
