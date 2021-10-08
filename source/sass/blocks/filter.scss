@@ -92,3 +92,59 @@
   overflow: hidden;
   transition: max-height 0.1s ease-out;
 }
+
+.filter__range-filter {
+  width: 200px;
+  padding-top: 24px;
+}
+
+.filter__range-controls {
+  height: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.filter__scale {
+  height: 1px;
+  background-color: $grey;
+}
+
+.filter__bar {
+  width: 90px;
+  background-color: $brown;
+  height: 2px;
+  margin: 0 auto;
+}
+
+.filter__toggle {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border-radius: 50%;
+  background-color:$brown;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.filter__toggle-min {
+  left: 42px;
+}
+
+.filter__toggle-max {
+  left: 142px;
+}
+
+.filter__price-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__price-controls label:first-of-type {
+  padding-left: 38px;
+}
+
+.filter__price-controls label:last-of-type {
+  padding-right: 25px;
+}

@@ -167,21 +167,32 @@
                   <legend class="filter__accordion-item-header">Price</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <div class='filter__accordion-item-content filter__accordion-container-list'>
-                      <div class="range-filter">
-                        <div class="range-controls">
-                          <div class="scale">
-                            <div class="bar"></div>
+
+
+
+                      <div class="filter__range-filter">
+
+                        <div class="filter__range-controls">
+                          <div class="filter__scale">
+                            <div class="filter__bar"></div>
                           </div>
-                          <div class="toggle toggle-min" tabindex="0"></div>
-                          <div class="toggle toggle-max" tabindex="0"></div>
+                          <div class="filter__toggle filter__toggle-min" tabindex="0"></div>
+                          <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
                         </div>
-                        <div class="price__controls">
-                          <input type="number" id="min-price" name="min-price" value="55">
+
+
+                        <div class="filter__price-controls">
+                          <input type="number" id="min-price" name="min-price" value="55" class="visually-hidden">
                           <label for="min-price">$55</label>
-                          <input type="number" id="max-price" name="max-price" value="155">
+                          <input type="number" id="max-price" name="max-price" value="155" class="visually-hidden">
                           <label for="max-price">$155</label>
                         </div>
+
                       </div>
+
+
+
+
                     </div>
                   </div>
                 </fieldset>
