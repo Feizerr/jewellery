@@ -202,6 +202,11 @@
 .header--active {
   background-color: $brown;
   padding: 55px 45px 80px;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  overflow: hidden;
+  position: fixed;
 }
 
 .header--active .header__container {

@@ -1,6 +1,8 @@
 'use strict';
 
 var navigation = document.querySelector(".navigation");
+var pageSite = document.querySelector('.page')
+
 var deleteNavigation = function () {
   window.addEventListener('resize', function () {
     if (window.innerWidth <= 1023) {
@@ -32,8 +34,8 @@ var headerToggle = document.querySelector('.header__toggle');
 
 headerToggle.addEventListener('click', function () {
   pageHeader.classList.toggle('header--active');
+  pageSite.classList.toggle('page__open');
 });
-
 
 // accordion
 
@@ -72,15 +74,7 @@ accordionItemHeaders.forEach(function (accordionItemHeader) {
   });
 })
 
-
-
-
-
-
-
-
-// accordion
-
+// filter
 
 var filterItemHeaders = document.querySelectorAll('.filter__accordion-item > legend');
 var filterItemsBody = document.querySelectorAll('.filter__accordion-item-body');
@@ -114,7 +108,6 @@ filterItemHeaders.forEach(function (accordionItemHeader) {
     useFilter(accordionItemHeader);
   });
 })
-
 
 //slider
 
@@ -151,3 +144,46 @@ $(document).ready(function () {
 
 // var buttonText = document.querySelector('.slick-active button')
 // var valueValue = buttonText.textContent;
+
+
+// Фильтр
+// if ('content' in document.createElement('template')) {
+
+//   // Находим элемент tbody таблицы
+//   // и шаблон строки
+//   var filterPopup = document.querySelector('#filter-template');
+
+//   window.addEventListener('resize', function () {
+//     if (window.innerWidth <= 1023) {
+//       if (wrapper.querySelector("#template__form")) {
+//       }
+
+//       else {
+//         var clone = template.content.cloneNode(true);
+//         wrapper.appendChild(clone);
+//         console.log('add')
+//       }
+//     } else {
+//       if (wrapper.querySelector("#template__form")) {
+//         wrapper.removeChild(template);
+//         console.log ('del')
+//       }
+//     }
+//   });
+// }
+
+
+var filterPopup = document.querySelector('.filter__popup');
+var showButton = document.querySelector('.catalog__show-button');
+var closePopupButton = document.querySelector('.modal-filter__close-button')
+
+showButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  filterPopup.classList.add('modal-filter');
+  pageSite.classList.toggle('page__open');
+});
+
+closePopupButton.addEventListener('click', function () {
+  filterPopup.classList.remove('modal-filter');
+  pageSite.classList.toggle('page__open');
+});

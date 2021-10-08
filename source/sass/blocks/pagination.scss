@@ -16,3 +16,20 @@
 .pagination__page-list li:not(:last-child) {
   padding-right: 15px;
 }
+
+.pagination__link {
+  color: $grey;
+  @include link();
+}
+
+.pagination__link--active,
+.pagination__button {
+  color: $almost-black;
+  @include link();
+}
+
+@media (max-width: $mobile-width) {
+  .pagination__button {
+    display: none;
+  }
+}

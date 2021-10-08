@@ -1,0 +1,103 @@
+@media (max-width: $tablet-width) {
+  .modal-filter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    background-color: $white;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal-filter {
+    margin: 0 auto;
+    padding-top: 78px;
+  }
+}
+
+
+.modal-filter__form {
+  max-width: 423px;
+  position: relative;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-filter__form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.modal__container {
+  max-width: 423px;
+  box-shadow: 10px 5px 5px rgba($beige, 0.3);
+  border: none;
+  margin: 30px 0 0;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container {
+    max-width: 100%;
+    box-shadow: 0 4px 15px 8px rgba($beige, 0.3);
+  }
+}
+
+.modal-filter__close-button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: $almost-black;
+  background-image: url(../img/close-btn.svg);
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -18px;
+}
+
+.modal-filter .filter__accordion-item:last-child {
+  border-bottom: 1px solid $brown;
+}
+
+
+.modal-filter__button {
+  width: 362px;
+  box-sizing: border-box;
+  margin-left: 21px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-filter__button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.modal-filter__button:first-of-type {
+  margin-top: 30px;
+}
+
+.modal__container {
+  font-family: "poppins-medium", "Arial", sans-serif;
+}
+
+.modal__container legend {
+  @include fonts(18px, 23px);
+}
+
+.modal__container label {
+  @include fonts(16px, 20px);
+}

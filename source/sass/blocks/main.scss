@@ -6,8 +6,21 @@
   box-sizing: border-box;
 }
 
+@media (max-width: $tablet-width) {
+  .main__wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .main__wrapper a {
-  @include link();
-  color: $almost-black;
   text-align: center;
 }
