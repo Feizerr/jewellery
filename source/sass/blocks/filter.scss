@@ -3,10 +3,6 @@
   margin-right: 50px;
 }
 
-.filter ul {
-  @include list-reset();
-}
-
 .filter__button {
   @include fonts(16px, 20px);
   width: 100%;
@@ -93,6 +89,11 @@
   transition: max-height 0.1s ease-out;
 }
 
+.filter__accordion-item-content {
+  @include list-reset();
+  padding-top: 25px;
+}
+
 .filter__range-filter {
   width: 200px;
   padding-top: 24px;
@@ -147,4 +148,42 @@
 
 .filter__price-controls label:last-of-type {
   padding-right: 25px;
+}
+
+.filter__option:not(:last-child) {
+  padding-bottom: 17px;
+}
+
+.filter__option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  // user-select: none;
+  padding-left: 25px;
+}
+
+.filter__option label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $brown;
+}
+
+.filter input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $brown;
+  background-color: $brown;
+}
+
+.filter__option input:hover + label,
+.filter__option input:focus + label {
+color: rgba($brown, 0.7);
 }
