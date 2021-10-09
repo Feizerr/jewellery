@@ -1,7 +1,7 @@
 'use strict';
 
 var navigation = document.querySelector('.navigation');
-var pageSite = document.querySelector('.page')
+var pageSite = document.querySelector('.page');
 
 var deleteNavigation = function () {
   window.addEventListener('resize', function () {
@@ -10,12 +10,12 @@ var deleteNavigation = function () {
     } else {
       navigation.classList.remove('navigation__closed');
     }
-  })
-}
+  });
+};
 
 deleteNavigation();
 
-var inputForSearch = document.querySelector('#search')
+var inputForSearch = document.querySelector('#search');
 
 if (window.innerWidth <= 1023) {
   inputForSearch.placeholder = '';
@@ -28,8 +28,8 @@ var removePlaceholderValue = function () {
     } else {
       inputForSearch.placeholder = 'Type here to search';
     }
-  })
-}
+  });
+};
 
 removePlaceholderValue();
 
@@ -50,7 +50,7 @@ var padding = 30;
 
 accordionItemsBody.forEach(function (accordionItem) {
   accordionItem.classList.remove('accordion__no-js');
-})
+});
 
 var useAccordion = function (element) {
   var currentlyActiveAccordionItemHeader = document.querySelector('.accordion__item > h3.active');
@@ -76,7 +76,7 @@ accordionItemHeaders.forEach(function (accordionItemHeader) {
   accordionItemHeader.addEventListener('keydown', function () {
     useAccordion(accordionItemHeader);
   });
-})
+});
 
 if (document.querySelector('.main__wrapper .filter')) {
   var filter = document.querySelector('.main__wrapper .filter');
@@ -84,9 +84,7 @@ if (document.querySelector('.main__wrapper .filter')) {
   filter.classList.add('filter__delete');
 }
 
-
 // filter
-
 
 var filterItemHeaders = document.querySelectorAll('.filter__accordion-item > legend');
 var filterItemsBody = document.querySelectorAll('.filter__accordion-item-body');
@@ -123,7 +121,6 @@ filterItemHeaders.forEach(function (accordionItemHeader) {
 
 //slider
 
-
 $(document).ready(function () {
   $('.slider').slick({
     arrows: true,
@@ -132,21 +129,21 @@ $(document).ready(function () {
     slidesToScroll: 4,
     speed: 1000,
     responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          dots: false,
-          arrows: false,
-        }
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
       }
-    ]
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        dots: false,
+        arrows: false,
+      }
+    }
+  ]
   });
 
   // $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -201,3 +198,48 @@ if (filterPopup || showButton || closePopupButton) {
   });
 }
 
+
+// login
+var enterLoginLink = document.querySelector('.header__login');
+var loginPopup = document.querySelector('.login');
+var closeButtonPopup = loginPopup.querySelector('.login__button-close');
+var additionalShowpopupButton = document.querySelector('.header__additional-special');
+
+var openLoginPopup = function (btn) {
+  btn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    if (document.querySelector('.page__open') || document.querySelector('.header--active')) {
+      pageHeader.classList.remove('header--active');
+      pageSite.classList.remove('page__open');
+    }
+    loginPopup.classList.add('login--active');
+  });
+};
+
+openLoginPopup(enterLoginLink);
+openLoginPopup(additionalShowpopupButton);
+
+var closeLoginPopup = function () {
+  closeButtonPopup.addEventListener('click', function () {
+    loginPopup.classList.remove('login--active');
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.key === 27 || evt.key === 'Escape') {
+
+      if (loginPopup.classList.contains('login--active')) {
+        evt.preventDefault();
+        loginPopup.classList.remove('login--active');
+      }
+    }
+  });
+
+  document.onclick = function (e) {
+    if (loginPopup.querySelector('.login--active') & e.target !== loginPopup) {
+      loginPopup.classList.remove('login--active');
+    }
+  };
+};
+
+closeLoginPopup();

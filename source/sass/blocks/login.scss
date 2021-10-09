@@ -1,0 +1,181 @@
+.login {
+  width: 430px;
+  background-color: $beige;
+  background-image: url('../img/sweet-ice-cream-photography.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 200px;
+  position: fixed;
+  z-index: 15;
+  top: 30px;
+	right: 0;
+	left: 0;
+	margin: auto;
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .login {
+    width: 270px;
+    padding-top: 125px;
+  }
+}
+
+.login--active {
+  display: block;
+}
+
+.login__for-page {
+  display: block;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.login h2 {
+  @include fonts(34px, 44px);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0 31px;
+  text-align: center;
+  font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
+}
+
+@media (max-width: $mobile-width) {
+  .login h2 {
+    @include fonts(24px, 31px);
+  }
+}
+
+.login__form {
+  width: 400px;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: $mobile-width) {
+  .login__form {
+    width: 270px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.login__form input {
+  width: 340px;
+  border: none;
+  border-bottom: 1px solid $almost-black;
+  background-color: $beige;
+  margin: 0 auto;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .login__form input {
+    width: 240px;
+  }
+}
+
+.login__form input:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+
+.login__form input::placeholder {
+  @include fonts(14px, 21px);
+  font-family: 'poppins-medium', 'Arial', sans-serif;
+  color: $grey;
+}
+
+.login__form a {
+  @include link();
+  @include fonts(12px, 18px);
+  color: $grey;
+  text-align: right;
+  width: 340px;
+  margin-left: 28px;
+}
+
+@media (max-width: $mobile-width) {
+  .login__form a {
+    width: 240px;
+    margin: 0;
+  }
+}
+
+.login__form button {
+  font-family: 'poppins-medium', 'Arial', sans-serif;
+  width: 340px;
+  padding: 28px;
+  background-color: $brown;
+  color: $white;
+  box-sizing: border-box;
+  margin: 50px auto 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .login__form button {
+    width: 240px;
+  }
+}
+
+.login__form button:hover {
+  background-color: rgba($brown, 0.7)
+}
+
+.login__form button:active {
+  background-color: rgba($brown, 0.5)
+}
+
+.login p {
+  @include fonts(14px, 21px);
+  font-family: 'poppins-medium', 'Arial', sans-serif;
+  color: $grey;
+  width: 340px;
+  padding: 0 0 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: $mobile-width) {
+  .login p {
+    width: 240px;
+  }
+}
+
+
+.login__create-account {
+  @include link();
+  color: $almost-black;
+}
+
+.login__create-account:hover {
+  color: $brown;
+}
+
+.login__create-account:active {
+  color: rgba($brown, 0.5)
+}
+
+.login__button-close {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-image: url('../img/black-btn.svg');
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: rgba($beige, 0);
+}
+
+.login__for-page .login__button-close {
+  display: none;
+}
