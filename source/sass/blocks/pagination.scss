@@ -19,6 +19,12 @@
   padding-right: 15px;
 }
 
+@media (max-width: $mobile-width) {
+  .pagination__page-list li:not(:last-child) {
+    padding-right: 23px;
+  }
+}
+
 .pagination__link {
   color: $grey;
   @include link();
@@ -33,5 +39,15 @@
 @media (max-width: $mobile-width) {
   .pagination__button {
     display: none;
+  }
+}
+
+.pagination__next-page {
+  padding-left: 26px;
+}
+
+@media (max-width: $mobile-width) {
+  .pagination__next-page {
+    padding-left: 0;
   }
 }

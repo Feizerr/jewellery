@@ -4,24 +4,22 @@
 
 .main__wrapper {
   margin: 0 auto;
-  padding: 0 90px 80px;
+  padding: 0 20px 76px;
   display: flex;
-  max-width: 1170px;
+  max-width: 1206px;
   box-sizing: border-box;
 }
 
 @media (max-width: $tablet-width) {
   .main__wrapper {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 0 45px 76px;
     flex-direction: column-reverse;
   }
 }
 
 @media (max-width: $mobile-width) {
   .main__wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 64px;
   }
 }
 

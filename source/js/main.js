@@ -5,7 +5,7 @@ if (document.querySelector('.new__slider-container--no-js')) {
   newSliderContainer.classList.remove('new__slider-container--no-js');
 }
 
-if(document.querySelector('.slider--no-js')) {
+if (document.querySelector('.slider--no-js')) {
   var slider = document.querySelector('.slider');
   slider.classList.remove('slider--no-js');
 }
@@ -53,11 +53,11 @@ headerToggle.addEventListener('click', function () {
 
 // accordion
 
-var minHeight = 0;
+var MIN_HEIGHT = 0;
 var accordionItemHeaders = document.querySelectorAll('.accordion__item > h3');
 var accordionItemsBody = document.querySelectorAll('.accordion__item-body');
-var padding = 43;
-var filterPadding = 843;
+var PADDING = 30;
+var PAGE_COUNT = 2;
 
 accordionItemsBody.forEach(function (accordionItem) {
   accordionItem.classList.remove('accordion__no-js');
@@ -67,15 +67,15 @@ var useAccordion = function (element) {
   var currentlyActiveAccordionItemHeader = document.querySelector('.accordion__item > h3.active');
   if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== element) {
     currentlyActiveAccordionItemHeader.classList.toggle('active');
-    currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = minHeight;
+    currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = MIN_HEIGHT;
   }
 
   element.classList.toggle('active');
   var accordionItemBody = element.nextElementSibling;
   if (element.classList.contains('active')) {
-    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + padding + 'px';
+    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + PADDING + 'px';
   } else {
-    accordionItemBody.style.maxHeight = minHeight;
+    accordionItemBody.style.maxHeight = MIN_HEIGHT;
   }
 };
 
@@ -102,21 +102,15 @@ var filterItemsBody = document.querySelectorAll('.filter__accordion-item-body');
 
 filterItemsBody.forEach(function (accordionItem) {
   accordionItem.classList.remove('accordion__no-js');
-})
+});
 
 var useFilter = function (element) {
-  var currentlyFilterActiveItemHeader = document.querySelector('.filter__accordion-item > legend.active');
-  if (currentlyFilterActiveItemHeader && currentlyFilterActiveItemHeader !== element) {
-    currentlyFilterActiveItemHeader.classList.toggle('active');
-    currentlyFilterActiveItemHeader.nextElementSibling.style.maxHeight = minHeight;
-  }
-
   element.classList.toggle('active');
   var filterItemBody = element.nextElementSibling;
   if (element.classList.contains('active')) {
-    filterItemBody.style.maxHeight = filterItemBody.scrollHeight + filterPadding + 'px';
+    filterItemBody.style.maxHeight = filterItemBody.scrollHeight + PADDING + 'px';
   } else {
-    filterItemBody.style.maxHeight = minHeight;
+    filterItemBody.style.maxHeight = MIN_HEIGHT;
   }
 };
 
@@ -133,6 +127,16 @@ filterItemHeaders.forEach(function (accordionItemHeader) {
 //slider
 
 $(document).ready(function () {
+
+  var $paginationCurrentPage = $('#start-pages');
+  var $paginationMaxPage = $('#all-pages');
+
+  $('.slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 2;
+    $paginationCurrentPage.text(i / 2);
+    $paginationMaxPage.text(Math.round(slick.slideCount / 2));
+  });
+
   $('.slider').slick({
     arrows: true,
     dots: true,
@@ -150,47 +154,15 @@ $(document).ready(function () {
       breakpoint: 767,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2,
         dots: false,
         arrows: false,
       }
     }
   ]
   });
-
-  // $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-  //   $('#start-pages').text(valueValue);
-  // });
 });
 
-// var buttonText = document.querySelector('.slick-active button')
-// var valueValue = buttonText.textContent;
-
-
-// Фильтр
-// if ('content' in document.createElement('template')) {
-
-//   // Находим элемент tbody таблицы
-//   // и шаблон строки
-//   var filterPopup = document.querySelector('#filter-template');
-
-//   window.addEventListener('resize', function () {
-//     if (window.innerWidth <= 1023) {
-//       if (wrapper.querySelector('#template__form')) {
-//       }
-
-//       else {
-//         var clone = template.content.cloneNode(true);
-//         wrapper.appendChild(clone);
-//         console.log('add')
-//       }
-//     } else {
-//       if (wrapper.querySelector('#template__form')) {
-//         wrapper.removeChild(template);
-//         console.log ('del')
-//       }
-//     }
-//   });
-// }
 
 var filterPopup = document.querySelector('.filter__popup');
 var showButton = document.querySelector('.catalog__show-button');

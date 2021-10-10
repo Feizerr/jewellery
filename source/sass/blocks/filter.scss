@@ -23,7 +23,7 @@
 .filter__button {
   @include fonts(16px, 20px);
   width: 100%;
-  padding: 28px;
+  padding: 25px;
   border: none;
   cursor: pointer;
 }
@@ -31,7 +31,7 @@
 .filter__button-apply {
   background-color: $brown;
   color: $white;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   border: none;
 
   &:hover {
@@ -62,13 +62,13 @@
 .filter__accordion {
   border: 1px solid $brown;
   padding: 0;
-  margin: 0 auto 35px;
+  margin: 0 auto 31px;
 }
 
 .filter__accordion-item {
   @include fonts(16px, 20px);
   margin: 0;
-  padding: 0 26px 25px;
+  padding: 0;
   border: none;
 }
 
@@ -78,11 +78,15 @@
 
 .filter__accordion-item-header {
   @include fonts(16px, 21px);
-  padding-top: 25px;
+  padding: 25px;
   width: 100%;
   cursor: pointer;
   display: flex;
   position: relative;
+}
+
+.filter__accordion-item .active {
+  padding-bottom: 0;
 }
 
 .filter__accordion-item-header:hover,
@@ -103,7 +107,8 @@
   height: 8px;
   position: absolute;
   background-position:bottom;
-  right: 0;
+  right: 26px;
+  top: 27px;
 }
 
 .filter__accordion-item-header.active::after {
@@ -115,21 +120,20 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.1s ease-out;
+  max-width: 250px;
 }
 
 .filter__accordion-item-content {
   @include list-reset();
-  padding-top: 25px;
+  padding: 20px 31px 19px;
 }
 
 .filter__range-filter {
   width: 200px;
-  padding-top: 24px;
 }
 
 .filter__range-controls {
-  height: 20px;
-  margin-bottom: 15px;
+  height: 11px;
   position: relative;
 }
 
@@ -179,7 +183,7 @@
 }
 
 .filter__option:not(:last-child) {
-  padding-bottom: 17px;
+  padding-bottom: 12px;
 }
 
 .filter__option label {
