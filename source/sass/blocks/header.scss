@@ -192,7 +192,7 @@
 }
 
 .header__additional-list li {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .header__additional-list a:not(.header__additional-special) {
@@ -201,12 +201,19 @@
 
 .header--active {
   background-color: $brown;
-  padding: 55px 45px 80px;
+  padding: 0 45px 80px;
   width: 100%;
   height: 100vh;
   overflow: auto;
   position: fixed;
   z-index: 20;
+}
+
+@media (max-width: $mobile-width) {
+  .header--active {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .header--active .header__container {
@@ -227,6 +234,13 @@
   display: block;
   order: 3;
   flex-basis: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: $mobile-width) {
+  .header--active .header__form {
+    margin-top: 8px;
+  }
 }
 
 .header--active input {
@@ -248,17 +262,43 @@
   flex-direction: column;
   border-top: none;
   margin: 0;
+  padding-top: 48px;
+}
+
+@media (max-width: $mobile-width) {
+  .header--active .navigation__list {
+    padding-top: 36px;
+  }
 }
 
 .header--active .navigation__item {
   @include fonts(24px, 36px);
-  padding-bottom: 40px;
+  padding-bottom: 21px;
   padding-left: 0;
+}
+
+.header__additional-list .navigation__item {
+  padding-bottom: 8px;
+}
+
+.header__additional-list .navigation__item:last-child {
+  padding-top: 20px;
 }
 
 .header--active .header__additional-list {
   display: flex;
   flex-direction: column;
+  padding-top: 9px;
+}
+
+@media (max-width: $mobile-width) {
+  .header--active .header__additional-list {
+    padding-top: 0;
+  }
+}
+
+.header--active .header__additional-link {
+  @include fonts(18px, 23px);
 }
 
 .header--active .header__additional-special {

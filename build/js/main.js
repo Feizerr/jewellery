@@ -124,6 +124,15 @@ filterItemHeaders.forEach(function (accordionItemHeader) {
   });
 })
 
+var buttonClear = document.querySelector('.filter__button-clear');
+var filterForm = document.querySelector('.fitler__form');
+
+if (filterForm && filterForm) {
+  buttonClear.addEventListener('click', function () {
+    filterForm.reset();
+  });
+}
+
 //slider
 
 $(document).ready(function () {
@@ -158,8 +167,7 @@ $(document).ready(function () {
         dots: false,
         arrows: false,
       }
-    }
-  ]
+    }]
   });
 });
 
@@ -189,15 +197,18 @@ var closeButtonPopup = loginPopup.querySelector('.login__button-close');
 var additionalShowpopupButton = document.querySelector('.header__additional-special');
 
 var openLoginPopup = function (btn) {
-  btn.addEventListener('click', function (evt) {
-    evt.preventDefault();
+  if (btn) {
+    btn.addEventListener('click', function (evt) {
+      evt.preventDefault();
 
-    if (document.querySelector('.page__open') || document.querySelector('.header--active')) {
-      pageHeader.classList.remove('header--active');
-      pageSite.classList.remove('page__open');
-    }
-    loginPopup.classList.add('login--active');
-  });
+      if (document.querySelector('.page__open') || document.querySelector('.header--active')) {
+        pageHeader.classList.remove('header--active');
+        pageSite.classList.remove('page__open');
+      }
+      loginPopup.classList.add('login--active');
+      pageSite.classList.toggle('page__open');
+    });
+  }
 };
 
 openLoginPopup(enterLoginLink);
@@ -206,6 +217,7 @@ openLoginPopup(additionalShowpopupButton);
 var closeLoginPopup = function () {
   closeButtonPopup.addEventListener('click', function () {
     loginPopup.classList.remove('login--active');
+    pageSite.classList.toggle('page__open');
   });
 
   window.addEventListener('keydown', function (evt) {
@@ -214,6 +226,7 @@ var closeLoginPopup = function () {
       if (loginPopup.classList.contains('login--active')) {
         evt.preventDefault();
         loginPopup.classList.remove('login--active');
+        pageSite.classList.toggle('page__open');
       }
     }
   });
@@ -221,6 +234,7 @@ var closeLoginPopup = function () {
   document.onclick = function (e) {
     if (loginPopup.querySelector('.login--active') & e.target !== loginPopup) {
       loginPopup.classList.remove('login--active');
+      pageSite.classList.toggle('page__open');
     }
   };
 };

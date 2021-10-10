@@ -1,4 +1,17 @@
 .login {
+  position: fixed;
+  z-index: 15;
+  top: 30px;
+	right: 0;
+	left: 0;
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  overflow: hidden;
+}
+
+.login__wrapper {
   width: 430px;
   background-color: $beige;
   background-image: url('../img/sweet-ice-cream-photography.jpg');
@@ -6,17 +19,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 200px;
-  position: fixed;
-  z-index: 15;
-  top: 30px;
-	right: 0;
-	left: 0;
-	margin: auto;
-  display: none;
+  margin: auto;
+  position: relative;
 }
 
 @media (max-width: $mobile-width) {
-  .login {
+  .login__wrapper {
     width: 270px;
     padding-top: 125px;
   }
@@ -58,9 +66,10 @@
 
 @media (max-width: $mobile-width) {
   .login__form {
-    width: 270px;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    display: block;
   }
 }
 
@@ -147,7 +156,6 @@
     width: 240px;
   }
 }
-
 
 .login__create-account {
   @include link();

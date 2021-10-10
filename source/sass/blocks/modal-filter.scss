@@ -12,27 +12,29 @@
     position: relative;
     z-index: 10;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: auto;
     overflow: hidden;
+    padding-bottom: 89px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .modal-filter {
     margin: 0 auto;
-    padding-top: 78px;
+    padding-top: 38px;
   }
 }
 
 .modal-filter__form {
   max-width: 423px;
   position: relative;
+  padding-bottom: 40px;
 }
 
 @media (max-width: $mobile-width) {
   .modal-filter__form {
-    max-width: 80%;
+    max-width: 87%;
     margin: 0 auto;
   }
 }
@@ -63,8 +65,15 @@
   background-repeat: no-repeat;
   content: '';
   position: absolute;
-  top: 0;
-  right: -18px;
+  top: -19px;
+  right: -16px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-filter__close-button {
+    top: -10px;
+    right: -6px;
+  }
 }
 
 .modal-filter .filter__accordion-item:last-child {
@@ -76,12 +85,13 @@
   width: 362px;
   box-sizing: border-box;
   margin-left: 21px;
+  font-family: 'poppins-medium', 'Arial', sans-serif;
 }
 
 @media (max-width: $mobile-width) {
   .modal-filter__button {
+    margin: 0 auto 20px;
     width: 100%;
-    margin-left: 0;
   }
 }
 
@@ -95,8 +105,149 @@
 
 .modal__container legend {
   @include fonts(18px, 23px);
+  padding: 32px 25px 38px;
+}
+
+@media(max-width: $mobile-width) {
+  .modal__container legend {
+    padding: 28px 25px 23px;
+  }
+}
+
+.modal__container .active {
+  padding-bottom: 0
 }
 
 .modal__container label {
   @include fonts(16px, 20px);
 }
+
+.modal__container .filter__accordion-item-content {
+  padding: 24px 32px 19px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__accordion-item-content {
+    padding-bottom: 11px;
+  }
+}
+
+.modal__container .filter__option {
+  padding-bottom: 18px;
+}
+
+.modal__container .filter__accordion-item-header::after {
+  width: 27px;
+  height: 32px;
+  right: 37px;
+  top: 26px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__accordion-item-header::after {
+    width: 18px;
+  height: 22px;
+  right: 29px;
+  top: 26px;
+  }
+}
+
+.modal__container .active::after {
+  width: 27px;
+  height: 32px;
+  right: 37px;
+  top: 34px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .active::after {
+    width: 20px;
+    height: 27px;
+    right: 24px;
+    top: 39px;
+  }
+}
+
+.modal__container .filter__accordion-item-body {
+  max-width: 432px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__accordion-item-body {
+    max-width: 280px;
+  }
+}
+
+.modal__container .filter__range-filter {
+  width: 304px;
+  padding-top: 9px;
+  padding-bottom: 32px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__range-filter {
+    width: 250px;
+    padding-bottom: 15px;
+  }
+}
+
+.modal__container .filter__bar {
+  width: 158px;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__range-filter {
+    width: 120px;
+  }
+}
+
+.modal__container .filter__toggle-max {
+  left: 221px;
+}
+
+.modal__container .filter__price-controls {
+  width: 89%;
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__price-controls {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__price-controls {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__toggle-min {
+    left: 25px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .filter__toggle-max {
+    left: 158px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__price-controls label:first-of-type {
+    padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__price-controls label:last-of-type {
+    padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .modal__container .modal__price-controls {
+    width: 185px;
+  }
+}
+

@@ -65,16 +65,16 @@
         </nav>
         <ul class="navigation__list header__additional-list">
           <li class="navigation__item">
-            <a href="#">About CH</a>
+            <a class="header__additional-link" href="#">About CH</a>
           </li>
           <li class="navigation__item">
-            <a href="#">Stores & Hours</a>
+            <a class="header__additional-link" href="#">Stores & Hours</a>
           </li>
           <li class="navigation__item">
-            <a href="#">Contact Us</a>
+            <a class="header__additional-link" href="#">Contact Us</a>
           </li>
           <li class="navigation__item">
-            <a class="header__additional-special" href="#">Login</a>
+            <a class="header__additional-link header__additional-special" href="login.html">Login</a>
           </li>
         </ul>
       </div>
@@ -509,7 +509,7 @@
             </div>
           </fieldset>
               <!-- 4 бокс -->
-          <fieldset class="filter__accordion-item price">
+          <fieldset class="filter__accordion-item">
             <legend class="filter__accordion-item-header">Price</legend>
             <div class="filter__accordion-item-body filter__accordion-no-js">
               <div class="filter__accordion-item-content filter__accordion-container-list">
@@ -521,7 +521,7 @@
                     <div class="filter__toggle filter__toggle-min" tabindex="0"></div>
                     <div class="filter__toggle filter__toggle-max" tabindex="0"></div>
                   </div>
-                  <div class="filter__price-controls">
+                  <div class="filter__price-controls modal__price-controls">
                     <input type="number" id="modal-min-price" name="min-price" value="55" class="visually-hidden">
                     <label for="modal-min-price">$55</label>
                     <input type="number" id="modal-max-price" name="max-price" value="155" class="visually-hidden">
@@ -538,19 +538,21 @@
       </form>
     </section>
     <section class="login">
-      <h2>Log In</h2>
-      <form class="login__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-        <label class="visually-hidden" for="login-email">Write your email</label>
-        <input type="email" id="login-email" name="login-email" placeholder="Your E-mail" required="">
-        <label class="visually-hidden" for="login-password">Write yout password</label>
-        <input type="text" id="login-password" name="login-password" placeholder="Password">
-        <a href="#">Forgot your password?</a>
-        <button class="login__button" type="submit">Log In</button>
-      </form>
-      <p>Don’t have an account?
-        <a href="#" class="login__create-account">Sign up</a>
-      </p>
-      <button type="button" class="login__button-close" aria-label="Close popup"></button>
+      <div class="login__wrapper">
+        <h2>Log In</h2>
+        <form class="login__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+          <label class="visually-hidden" for="login-email">Write your email</label>
+          <input type="email" id="login-email" name="login-email" placeholder="Your E-mail" required="">
+          <label class="visually-hidden" for="login-password">Write yout password</label>
+          <input type="text" id="login-password" name="login-password" placeholder="Password">
+          <a href="#">Forgot your password?</a>
+          <button class="login__button" type="submit">Log In</button>
+        </form>
+        <p>Don’t have an account?
+          <a href="#" class="login__create-account">Sign up</a>
+        </p>
+        <button type="button" class="login__button-close" aria-label="Close popup"></button>
+      </div>
     </section>
     <script src="js/vendors.js"></script>
     <script src="js/main.js"></script>
