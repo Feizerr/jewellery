@@ -13,7 +13,7 @@
 }
 
 .header__container {
-  padding: 33px 21px 20px;
+  padding: 33px 21px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -146,12 +146,12 @@
 
 .header__navigation ul {
   @include list-reset();
-  @include offset(0, 0);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 80%;
   margin: 0 auto;
+  padding: 20px 0 0;
 }
 
 .header__navigation li {

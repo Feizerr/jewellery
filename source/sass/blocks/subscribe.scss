@@ -85,6 +85,13 @@
   color: $white;
   border: none;
   min-width: fit-content;
+  cursor: pointer;
+}
+
+@media (max-width: $tablet-width) {
+  .subscribe__button {
+    width: 126px;
+  }
 }
 
 @media (max-width: $mobile-width) {
