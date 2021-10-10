@@ -141,3 +141,20 @@
     padding-bottom: 36px;
   }
 }
+
+.slider--no-js {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: $tablet-width) {
+  .slider--no-js {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .slider--no-js .new__slider-container {
+    justify-content: center;
+  }
+}

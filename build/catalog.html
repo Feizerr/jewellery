@@ -536,8 +536,23 @@
         <button aria-label="Cancel" type="submit" class="filter__button filter__button-clear modal-filter__button">Clear All</button>
         <button class="modal-filter__close-button" aria-label="Close the filter"></button>
       </form>
-
     </section>
+    <section class="login">
+      <h2>Log In</h2>
+      <form class="login__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+        <label class="visually-hidden" for="login-email">Write your email</label>
+        <input type="email" id="login-email" name="login-email" placeholder="Your E-mail" required="">
+        <label class="visually-hidden" for="login-password">Write yout password</label>
+        <input type="text" id="login-password" name="login-password" placeholder="Password">
+        <a href="#">Forgot your password?</a>
+        <button class="login__button" type="submit">Log In</button>
+      </form>
+      <p>Don’t have an account?
+        <a href="#" class="login__create-account">Sign up</a>
+      </p>
+      <button type="button" class="login__button-close" aria-label="Close popup"></button>
+    </section>
+
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

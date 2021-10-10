@@ -1,5 +1,15 @@
 'use strict';
 
+if (document.querySelector('.new__slider-container--no-js')) {
+  var newSliderContainer = document.querySelector('.new__slider-container');
+  newSliderContainer.classList.remove('new__slider-container--no-js');
+}
+
+if(document.querySelector('.slider--no-js')) {
+  var slider = document.querySelector('.slider');
+  slider.classList.remove('slider--no-js');
+}
+
 var navigation = document.querySelector('.navigation');
 var pageSite = document.querySelector('.page');
 
@@ -46,7 +56,8 @@ headerToggle.addEventListener('click', function () {
 var minHeight = 0;
 var accordionItemHeaders = document.querySelectorAll('.accordion__item > h3');
 var accordionItemsBody = document.querySelectorAll('.accordion__item-body');
-var padding = 30;
+var padding = 43;
+var filterPadding = 843;
 
 accordionItemsBody.forEach(function (accordionItem) {
   accordionItem.classList.remove('accordion__no-js');
@@ -103,7 +114,7 @@ var useFilter = function (element) {
   element.classList.toggle('active');
   var filterItemBody = element.nextElementSibling;
   if (element.classList.contains('active')) {
-    filterItemBody.style.maxHeight = filterItemBody.scrollHeight + padding + 'px';
+    filterItemBody.style.maxHeight = filterItemBody.scrollHeight + filterPadding + 'px';
   } else {
     filterItemBody.style.maxHeight = minHeight;
   }

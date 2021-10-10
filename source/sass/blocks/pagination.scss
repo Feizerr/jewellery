@@ -10,7 +10,9 @@
 
 .pagination__page-list {
   display: flex;
-  width: min-content;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  justify-content: center;
 }
 
 .pagination__page-list li:not(:last-child) {

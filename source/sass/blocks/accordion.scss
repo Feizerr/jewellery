@@ -9,8 +9,11 @@
 }
 
 .accordion__item {
-  padding: 48px 43px 37px;
   border-bottom: 1px solid $brown;
+}
+
+.accordion__item .active {
+  padding-bottom: 9px;
 }
 
 @media (max-width: $tablet-width) {
@@ -35,7 +38,7 @@
   font-family: 'poppins-medium', 'Arial', sans-serif;
   width: 100%;
   text-align: left;
-  padding-bottom: 5px;
+  padding: 44px 41px 43px;
   min-height: 26px;
   display: flex;
   position: relative;
@@ -94,8 +97,8 @@
   @include offset(0, 0);
   @include fonts(16px, 20px);
   font-family: 'poppins-regular', 'Arial', sans-serif;
-  width: 59%;
-  padding-left: 3px;
+  padding: 0 48px 43px;
+  width: 64%;
 }
 
 

@@ -11,7 +11,7 @@
 
 .title-box--index {
   background-image: url("../img/main.jpg");
-  height: 463px;
+  min-height: 463px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main@2x.jpg");
@@ -40,7 +40,7 @@
 
 .title-box--catalog {
   background-image: url("../img/background.jpg");
-  height: 261px;
+  min-height: 261px;
   margin-bottom: 80px;
 
   @media (min-resolution: 2dppx) {

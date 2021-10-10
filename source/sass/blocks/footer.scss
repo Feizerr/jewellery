@@ -1,12 +1,13 @@
 .footer {
   background-color: $black;
   color: $white;
+  flex: 0 0 auto;
 }
 
 .footer__wrapper {
   margin: 0 auto;
   max-width: 1214px;
-  padding: 88px 20px 81px;
+  padding: 90px 20px 81px;
   display: flex;
   width: 100%;
 }
