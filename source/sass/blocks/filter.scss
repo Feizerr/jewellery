@@ -1,21 +1,17 @@
-.filter {
+.filter__wrapper{
   width: 250px;
   margin-right: 50px;
 }
 
 @media (max-width: $tablet-width) {
-  .filter {
+  .filter__wrapper {
     width: 80%;
     margin: 40px auto;
   }
 }
 
-.filter__popup {
-  display: none;
-}
-
 @media (max-width: $tablet-width) {
-  .filter__delete {
+  .filter {
     display: none;
   }
 }

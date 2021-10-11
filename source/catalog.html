@@ -89,69 +89,72 @@
         </div>
       </section>
       <div class='main__wrapper'>
+
         <section class='filter' id='main-filter'>
-          <form class='fitler__form'>
-            <!-- Здесь начинается аккордеон -->
-            <div class='filter__accordion'>
-               <!-- Первый бокс -->
-              <fieldset class='filter__accordion-item product'>
-                <legend class='filter__accordion-item-header'>Product</legend>
-                <div class='filter__accordion-item-body filter__accordion-no-js'>
-                  <ul class='filter__accordion-item-content'>
-                    <li class='filter__option'>
-                      <input class='visually-hidden' type='checkbox' name='necklaces' id='filter-necklaces' checked>
-                      <label for='filter-necklaces'>Necklaces</label>
-                    </li>
-                    <li class='filter__option'>
-                      <input class='visually-hidden' type='checkbox' name='chokers' id='filter-chokers' checked>
-                      <label for='filter-chokers'>Chokers</label>
-                    </li>
-                    <li class='filter__option'>
-                      <input class='visually-hidden' type='checkbox' name='rings' id='filter-rings'>
-                      <label for='filter-rings'>Rings</label>
-                    </li>
-                    <li class='filter__option'>
-                      <input class='visually-hidden' type='checkbox' name='earrings' id='filter-earrings' checked>
-                      <label for='filter-earrings'>Earrings</label>
-                    </li>
-                  </ul>
-                </div>
-              </fieldset>
-                 <!-- 2 бокс -->
+          <div class='filter__wrapper'>
+            <form class='fitler__form modal-filter__form'>
+              <!-- Здесь начинается аккордеон -->
+              <div class='filter__accordion modal__container'>
+                <!-- Первый бокс -->
+                <fieldset class='filter__accordion-item product'>
+                  <legend class='filter__accordion-item-header'>Product</legend>
+                  <div class='filter__accordion-item-body filter__accordion-no-js'>
+                    <ul class='filter__accordion-item-content'>
+
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='necklaces' id='filter-necklaces' checked>
+                        <label for='filter-necklaces'>Necklaces</label>
+                      </li>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='chokers' id='filter-chokers' checked>
+                        <label for='filter-chokers'>Chokers</label>
+                      </li>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='rings' id='filter-rings'>
+                        <label for='filter-rings'>Rings</label>
+                      </li>
+                      <li class='filter__option'>
+                        <input class='visually-hidden' type='checkbox' name='earrings' id='filter-earrings' checked>
+                        <label for='filter-earrings'>Earrings</label>
+                      </li>
+                    </ul>
+                  </div>
+                </fieldset>
+                <!-- 2 бокс -->
                 <fieldset class='filter__accordion-item material'>
                   <legend class='filter__accordion-item-header'>Material</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <ul class='filter__accordion-item-content filter__accordion-container-list'>
                       <li class='filter__option'>
-                        <input class='visually-hidden' type='checkbox' name='gold' id='filter-gold' checked>
-                        <label for='filter-gold'>Gold</label>
+                        <input class='visually-hidden' type='checkbox' name='gold' id='modal-filter-gold' checked>
+                        <label for='modal-filter-gold'>Gold</label>
                       </li>
                       <li class='filter__option'>
-                        <input class='visually-hidden' type='checkbox' name='
-                        silver' id='filter-silver'>
-                        <label for='filter-silver'>Silver</label>
+                        <input class='visually-hidden' type='checkbox' name='silver' id='modal-filter-silver'>
+                        <label for='modal-filter-silver'>Silver</label>
                       </li>
                     </ul>
                   </div>
                 </fieldset>
-                   <!-- 3 бокс -->
+                <!-- 3 бокс -->
                 <fieldset class='filter__accordion-item collection'>
                   <legend class='filter__accordion-item-header'>Collection</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <ul class='filter__accordion-item-content filter__accordion-container-list'>
                       <li class='filter__option'>
-                        <input class='visually-hidden' type='checkbox' name='new' id='filter-new' checked>
-                        <label for='filter-new'>Pink flamingo</label>
+                        <input class='visually-hidden' type='checkbox' name='new' id='modal-filter-new' checked>
+                        <label for='modal-filter-new'>Pink flamingo</label>
                       </li>
                       <li class='filter__option'>
-                        <input class='visually-hidden' type='checkbox' name='traditional' id='filter-traditional' checked>
-                        <label for='filter-traditional'>Dreams</label>
+                        <input class='visually-hidden' type='checkbox' name='traditional' id='modal-filter-traditional'
+                          checked>
+                        <label for='modal-filter-traditional'>Dreams</label>
                       </li>
                     </ul>
                   </div>
                 </fieldset>
-                    <!-- 4 бокс -->
-                <fieldset class='filter__accordion-item price'>
+                <!-- 4 бокс -->
+                <fieldset class='filter__accordion-item'>
                   <legend class='filter__accordion-item-header'>Price</legend>
                   <div class='filter__accordion-item-body filter__accordion-no-js'>
                     <div class='filter__accordion-item-content filter__accordion-container-list'>
@@ -163,20 +166,25 @@
                           <div class='filter__toggle filter__toggle-min' tabindex='0'></div>
                           <div class='filter__toggle filter__toggle-max' tabindex='0'></div>
                         </div>
-                        <div class='filter__price-controls'>
-                          <input type='number' id='min-price' name='min-price' value='55' class='visually-hidden'>
-                          <label for='min-price'>$55</label>
-                          <input type='number' id='max-price' name='max-price' value='155' class='visually-hidden'>
-                          <label for='max-price'>$155</label>
+                        <div class='filter__price-controls modal__price-controls'>
+                          <input type='number' id='modal-min-price' name='min-price' value='55' class='visually-hidden'>
+                          <label for='modal-min-price'>$55</label>
+                          <input type='number' id='modal-max-price' name='max-price' value='155' class='visually-hidden'>
+                          <label for='modal-max-price'>$155</label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </fieldset>
               </div>
-              <button class='filter__button filter__button-apply' aria-label='Show filtered items' type='submit'>Apply</button>
-              <button aria-label='Cancel' type='submit' class='filter__button filter__button-clear'>Clear All</button>
-          </form>
+              <button class='filter__button filter__button-apply modal-filter__button' aria-label='Show filtered items'
+                type='submit'>Apply</button>
+              <button aria-label='Cancel' type='submit' class='filter__button filter__button-clear modal-filter__button'>Clear
+                All</button>
+              <button class='modal-filter__close-button' aria-label='Close the filter'></button>
+            </form>
+          </div>
+
         </section>
         <section class='catalog'>
           <a class='catalog__show-button' href='#main-filter'>Filter</a>
@@ -184,9 +192,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/.double-pearl-earringswebp 1x, img/double-pearl-earrings@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/.double-pearl-earringswebp 1x, img/double-pearl-earrings@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/double-pearl-earrings.jpg' srcset='img/double-pearl-earrings@2x.jpg 2x' alt='Double pearl earrings ' width='270' height='272'>
+                  <img loading='lazy' src='img/double-pearl-earrings.jpg' srcset='img/double-pearl-earrings@2x.jpg 2x'
+                    alt='Double pearl earrings ' width='270' height='272'>
                 </picture>
                 <h2>Double pearl earrings </h2>
                 <p>$ 115</p>
@@ -195,9 +204,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/black-choker-gold-bead.webp 1x, img/black-choker-gold-bead@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/black-choker-gold-bead.jpg' srcset='img/black-choker-gold-bead@2x.jpg 2x' alt='Choker with gold bead' width='270' height='272'>
+                  <img loading='lazy' src='img/black-choker-gold-bead.jpg' srcset='img/black-choker-gold-bead@2x.jpg 2x'
+                    alt='Choker with gold bead' width='270' height='272'>
                 </picture>
                 <h2>Choker with gold bead</h2>
                 <p>$ 55</p>
@@ -206,9 +216,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/gold-layered-necklace.webp 1x, img/gold-layered-necklace@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/gold-layered-necklace.jpg' srcset='img/gold-layered-necklace@2x.jpg 2x' alt='Gold layered necklace' width='270' height='272'>
+                  <img loading='lazy' src='img/gold-layered-necklace.jpg' srcset='img/gold-layered-necklace@2x.jpg 2x'
+                    alt='Gold layered necklace' width='270' height='272'>
                 </picture>
                 <h2>Gold layered necklace</h2>
                 <p>$ 155</p>
@@ -217,9 +228,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/blue-gemstone-pendant.webp 1x, img/blue-gemstone-pendant@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/blue-gemstone-pendant.jpg' srcset='img/blue-gemstone-pendant@2x.jpg 2x' alt='Blue gemstone pendant' width='270' height='272'>
+                  <img loading='lazy' src='img/blue-gemstone-pendant.jpg' srcset='img/blue-gemstone-pendant@2x.jpg 2x'
+                    alt='Blue gemstone pendant' width='270' height='272'>
                 </picture>
                 <h2>Blue gemstone pendant</h2>
                 <p>$ 105</p>
@@ -228,9 +240,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/boho-earrings.webp 1x, img/boho-earrings@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/boho-earrings.jpg' srcset='img/boho-earrings@2x.jpg 2x' alt='Boho earrings' width='270' height='272'>
+                  <img loading='lazy' src='img/boho-earrings.jpg' srcset='img/boho-earrings@2x.jpg 2x'
+                    alt='Boho earrings' width='270' height='272'>
                 </picture>
                 <h2>Boho earrings</h2>
                 <p>$ 75</p>
@@ -239,9 +252,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/bird-necklace.webp 1x, img/bird-necklace@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/bird-necklace.jpg' srcset='img/bird-necklace@2x.jpg 2x' alt='Gold bird necklace' width='270' height='272'>
+                  <img loading='lazy' src='img/bird-necklace.jpg' srcset='img/bird-necklace@2x.jpg 2x'
+                    alt='Gold bird necklace' width='270' height='272'>
                 </picture>
                 <h2>Gold bird necklace</h2>
                 <p>$ 135</p>
@@ -250,9 +264,11 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/black-leather-choker-necklace.webp 1x, img/black-leather-choker-necklace@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/black-leather-choker-necklace.jpg' srcset='img/black-leather-choker-necklace@2x.jpg 2x' alt='Black leather choker' width='270' height='272'>
+                  <img loading='lazy' src='img/black-leather-choker-necklace.jpg'
+                    srcset='img/black-leather-choker-necklace@2x.jpg 2x' alt='Black leather choker' width='270'
+                    height='272'>
                 </picture>
                 <h2>Black leather choker</h2>
                 <p>$ 85</p>
@@ -261,9 +277,11 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/purple-gemstone-necklace.webp 1x, img/purple-gemstone-necklace@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/purple-gemstone-necklace.jpg' srcset='img/purple-gemstone-necklace@2x.jpg 2x' alt='Necklace with amethyst' width='270' height='272'>
+                  <img loading='lazy' src='img/purple-gemstone-necklace.jpg'
+                    srcset='img/purple-gemstone-necklace@2x.jpg 2x' alt='Necklace with amethyst' width='270'
+                    height='272'>
                 </picture>
                 <h2>Necklace with amethyst</h2>
                 <p>$ 145</p>
@@ -272,9 +290,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/elephant-earrings.webp 1x, img/elephant-earrings@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/elephant-earrings.jpg' srcset='img/elephant-earrings@2x.jpg 2x' alt='Elephant earrings' width='270' height='272'>
+                  <img loading='lazy' src='img/elephant-earrings.jpg' srcset='img/elephant-earrings@2x.jpg 2x'
+                    alt='Elephant earrings' width='270' height='272'>
                 </picture>
                 <h2>Elephant earrings</h2>
                 <p>$ 95</p>
@@ -283,9 +302,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/threader-necklace-closeup.webp 1x, img/threader-necklace-closeup@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/threader-necklace-closeup.jpg' srcset='img/threader-necklace-closeup@2x.jpg 2x' alt='Threader necklace' width='270' height='272'>
+                  <img loading='lazy' src='img/threader-necklace-closeup.jpg'
+                    srcset='img/threader-necklace-closeup@2x.jpg 2x' alt='Threader necklace' width='270' height='272'>
                 </picture>
                 <h2>Threader necklace</h2>
                 <p>$ 115</p>
@@ -294,9 +314,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/origami-crane-necklace.webp 1x, img/origami-crane-necklace@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/origami-crane-necklace.jpg' srcset='img/origami-crane-necklace@2x.jpg 2x' alt='Origami crane necklace' width='270' height='272'>
+                  <img loading='lazy' src='img/origami-crane-necklace.jpg' srcset='img/origami-crane-necklace@2x.jpg 2x'
+                    alt='Origami crane necklace' width='270' height='272'>
                 </picture>
                 <h2>Origami crane necklace</h2>
                 <p>$ 105</p>
@@ -305,9 +326,10 @@
             <li>
               <a class='catalog__link' href='#'>
                 <picture>
-                  <!-- <source type='image/webp' srcset='img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x'> -->
+                  <source type='image/webp' srcset='img/marble-earrings.webp 1x, img/marble-earrings@2x.webp 2x'>
                   <!-- 1х: 270px; 2x: 540px -->
-                  <img loading='lazy' src='img/marble-earrings.jpg' srcset='img/marble-earrings@2x.jpg 2x' alt='Marble earrings' width='270' height='272'>
+                  <img loading='lazy' src='img/marble-earrings.jpg' srcset='img/marble-earrings@2x.jpg 2x'
+                    alt='Marble earrings' width='270' height='272'>
                 </picture>
                 <h2>Marble earrings</h2>
                 <p>$ 95</p>
@@ -447,115 +469,26 @@
     </footer>
 
   </div>
-    <section class='filter filter__popup'>
-      <form class='fitler__form modal-filter__form'>
-      <!-- Здесь начинается аккордеон -->
-      <div class='filter__accordion modal__container'>
-          <!-- Первый бокс -->
-        <fieldset class='filter__accordion-item product'>
-          <legend class='filter__accordion-item-header'>Product</legend>
-          <div class='filter__accordion-item-body filter__accordion-no-js'>
-            <ul class='filter__accordion-item-content'>
 
-              <li class='filter__option'>
-                <input class='visually-hidden' type='checkbox' name='necklaces' id='filter-necklaces' checked>
-                <label for='filter-necklaces'>Necklaces</label>
-              </li>
-              <li class='filter__option'>
-                <input class='visually-hidden' type='checkbox' name='chokers' id='modal-filter-chokers' checked>
-                <label for='modal-filter-chokers'>Chokers</label>
-              </li>
-              <li class='filter__option'>
-                <input class='visually-hidden' type='checkbox' name='rings' id='modal-filter-rings'>
-                <label for='modal-filter-rings'>Rings</label>
-              </li>
-              <li class='filter__option'>
-                <input class='visually-hidden' type='checkbox' name='earrings' id='modal-filter-earrings' checked>
-                <label for='modal-filter-earrings'>Earrings</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-            <!-- 2 бокс -->
-          <fieldset class='filter__accordion-item material'>
-            <legend class='filter__accordion-item-header'>Material</legend>
-            <div class='filter__accordion-item-body filter__accordion-no-js'>
-              <ul class='filter__accordion-item-content filter__accordion-container-list'>
-                <li class='filter__option'>
-                  <input class='visually-hidden' type='checkbox' name='gold' id='modal-filter-gold' checked>
-                  <label for='modal-filter-gold'>Gold</label>
-                </li>
-                <li class='filter__option'>
-                  <input class='visually-hidden' type='checkbox' name='silver' id='modal-filter-silver'>
-                  <label for='modal-filter-silver'>Silver</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-              <!-- 3 бокс -->
-          <fieldset class='filter__accordion-item collection'>
-            <legend class='filter__accordion-item-header'>Collection</legend>
-            <div class='filter__accordion-item-body filter__accordion-no-js'>
-              <ul class='filter__accordion-item-content filter__accordion-container-list'>
-                <li class='filter__option'>
-                  <input class='visually-hidden' type='checkbox' name='new' id='modal-filter-new' checked>
-                  <label for='modal-filter-new'>Pink flamingo</label>
-                </li>
-                <li class='filter__option'>
-                  <input class='visually-hidden' type='checkbox' name='traditional' id='modal-filter-traditional' checked>
-                  <label for='modal-filter-traditional'>Dreams</label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-              <!-- 4 бокс -->
-          <fieldset class='filter__accordion-item'>
-            <legend class='filter__accordion-item-header'>Price</legend>
-            <div class='filter__accordion-item-body filter__accordion-no-js'>
-              <div class='filter__accordion-item-content filter__accordion-container-list'>
-                <div class='filter__range-filter'>
-                  <div class='filter__range-controls'>
-                    <div class='filter__scale'>
-                      <div class='filter__bar'></div>
-                    </div>
-                    <div class='filter__toggle filter__toggle-min' tabindex='0'></div>
-                    <div class='filter__toggle filter__toggle-max' tabindex='0'></div>
-                  </div>
-                  <div class='filter__price-controls modal__price-controls'>
-                    <input type='number' id='modal-min-price' name='min-price' value='55' class='visually-hidden'>
-                    <label for='modal-min-price'>$55</label>
-                    <input type='number' id='modal-max-price' name='max-price' value='155' class='visually-hidden'>
-                    <label for='modal-max-price'>$155</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-        </div>
-        <button class='filter__button filter__button-apply modal-filter__button' aria-label='Show filtered items' type='submit'>Apply</button>
-        <button aria-label='Cancel' type='submit' class='filter__button filter__button-clear modal-filter__button'>Clear All</button>
-        <button class='modal-filter__close-button' aria-label='Close the filter'></button>
+  <section class="login">
+    <div class="login__wrapper">
+      <h2>Log In</h2>
+      <form class="login__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+        <label class="visually-hidden" for="login-email">Write your email</label>
+        <input type="email" id="login-email" name="login-email" placeholder="Your E-mail" required>
+        <label class="visually-hidden" for="login-password">Write yout password</label>
+        <input type="text" id="login-password" name="login-password" placeholder="Password">
+        <a href="#">Forgot your password?</a>
+        <button class="login__button" type="submit">Log In</button>
       </form>
-    </section>
-    <section class="login">
-      <div class="login__wrapper">
-        <h2>Log In</h2>
-        <form class="login__form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-          <label class="visually-hidden" for="login-email">Write your email</label>
-          <input type="email" id="login-email" name="login-email" placeholder="Your E-mail" required>
-          <label class="visually-hidden" for="login-password">Write yout password</label>
-          <input type="text" id="login-password" name="login-password" placeholder="Password">
-          <a href="#">Forgot your password?</a>
-          <button class="login__button" type="submit">Log In</button>
-        </form>
-        <p>Don’t have an account?
-          <a href="#" class="login__create-account">Sign up</a>
-        </p>
-        <button type="button" class="login__button-close" aria-label="Close popup"></button>
-      </div>
-    </section>
-    <script src='js/vendors.js'></script>
-    <script src='js/main.js'></script>
+      <p>Don’t have an account?
+        <a href="#" class="login__create-account">Sign up</a>
+      </p>
+      <button type="button" class="login__button-close" aria-label="Close popup"></button>
+    </div>
+  </section>
+  <script src='js/vendors.js'></script>
+  <script src='js/main.js'></script>
 </body>
 
 </html>

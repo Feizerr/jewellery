@@ -89,11 +89,11 @@ accordionItemHeaders.forEach(function (accordionItemHeader) {
   });
 });
 
-if (document.querySelector('.main__wrapper .filter')) {
-  var filter = document.querySelector('.main__wrapper .filter');
+// if (document.querySelector('.main__wrapper .filter')) {
+//   var filter = document.querySelector('.filter');
 
-  filter.classList.add('filter__delete');
-}
+//   filter.classList.add('filter__delete');
+// }
 
 // filter
 
@@ -172,19 +172,19 @@ $(document).ready(function () {
 });
 
 
-var filterPopup = document.querySelector('.filter__popup');
+var filter = document.querySelector('.filter');
 var showButton = document.querySelector('.catalog__show-button');
-var closePopupButton = document.querySelector('.modal-filter__close-button')
+var closePopupButton = document.querySelector('.modal-filter__close-button');
 
-if (filterPopup || showButton || closePopupButton) {
+if (filter || showButton || closePopupButton) {
   showButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    filterPopup.classList.add('modal-filter');
+    filter.classList.add('modal-filter');
     pageSite.classList.toggle('page__open');
   });
 
   closePopupButton.addEventListener('click', function () {
-    filterPopup.classList.remove('modal-filter');
+    filter.classList.remove('modal-filter');
     pageSite.classList.toggle('page__open');
   });
 }
