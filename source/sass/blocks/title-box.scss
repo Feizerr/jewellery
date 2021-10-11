@@ -10,41 +10,41 @@
 }
 
 .title-box--index {
-  background-image: url("../img/main.jpg");
+  background-image: url('../img/main.jpg');
   min-height: 463px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main@2x.jpg");
+    background-image: url('../img/main@2x.jpg');
   }
 }
 
 @media (max-width: $tablet-width) {
   .title-box--index {
-    background-image: url("../img/main-tab.jpg");
+    background-image: url('../img/main-tab.jpg');
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-tab@2x.jpg");
+    background-image: url('../img/main-tab@2x.jpg');
   }
 }
 
 @media (max-width: $mobile-width) {
   .title-box--index {
-    background-image: url("../img/main-mob.jpg");
+    background-image: url('../img/main-mob.jpg');
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-mob@2x.jpg");
+    background-image: url('../img/main-mob@2x.jpg');
   }
 }
 
 .title-box--catalog {
-  background-image: url("../img/background.jpg");
+  background-image: url('../img/background.jpg');
   min-height: 261px;
   margin-bottom: 80px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background@2x.jpg");
+    background-image: url('../img/background@2x.jpg');
   }
 }
 
@@ -73,14 +73,14 @@
 
 .title-box h2 {
   @include offset(0, 0);
-  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
   width: 100%;
   text-align: center;
 }
 
 .title-box p {
   @include offset(0, 0);
-  font-family: "cormorantgaramond-regular", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-regular', 'Arial', sans-serif;
   font-style: italic;
   width: 100%;
   text-align: center;

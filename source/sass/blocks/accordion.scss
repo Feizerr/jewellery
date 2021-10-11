@@ -12,6 +12,14 @@
   border-bottom: 1px solid $brown;
 }
 
+.accordion__item:hover h3 {
+  color: $brown;
+}
+
+.accordion__item:active h3 {
+  opacity: 0.7;
+}
+
 .accordion__item .active {
   padding-bottom: 9px;
 }
@@ -50,6 +58,7 @@
   .accordion h3 {
     @include fonts(16px, 22px);
     padding: 18px 57px 20px 22px;
+    min-height: 62px;
   }
 }
 
@@ -89,6 +98,19 @@
   }
 }
 
+@media (max-width: $mobile-width) {
+  .accordion h3::after {
+    right: 7%;
+    top: 23px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .accordion h3.active::after {
+    right: 7%;
+    top: 23px;
+  }
+}
 
 .accordion__container-list {
   display: flex;
@@ -106,7 +128,6 @@
   padding: 0 48px 43px;
   width: 64%;
 }
-
 
 @media (max-width: $tablet-width) {
   .accordion p {

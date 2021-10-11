@@ -89,19 +89,13 @@ accordionItemHeaders.forEach(function (accordionItemHeader) {
   });
 });
 
-// if (document.querySelector('.main__wrapper .filter')) {
-//   var filter = document.querySelector('.filter');
-
-//   filter.classList.add('filter__delete');
-// }
-
 // filter
 
 var filterItemHeaders = document.querySelectorAll('.filter__accordion-item > legend');
 var filterItemsBody = document.querySelectorAll('.filter__accordion-item-body');
 
 filterItemsBody.forEach(function (accordionItem) {
-  accordionItem.classList.remove('accordion__no-js');
+  accordionItem.classList.remove('filter__accordion-no-js');
 });
 
 var useFilter = function (element) {
@@ -124,15 +118,6 @@ filterItemHeaders.forEach(function (accordionItemHeader) {
   });
 })
 
-var buttonClear = document.querySelector('.filter__button-clear');
-var filterForm = document.querySelector('.fitler__form');
-
-if (filterForm && filterForm) {
-  buttonClear.addEventListener('click', function () {
-    filterForm.reset();
-  });
-}
-
 //slider
 
 $(document).ready(function () {
@@ -141,14 +126,15 @@ $(document).ready(function () {
   var $paginationMaxPage = $('#all-pages');
 
   $('.slider').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-    var i = (currentSlide ? currentSlide : 0) + 2;
-    $paginationCurrentPage.text(i / 2);
-    $paginationMaxPage.text(Math.round(slick.slideCount / 2));
+    var i = (currentSlide ? currentSlide : 0) + PAGE_COUNT;
+    $paginationCurrentPage.text(i / PAGE_COUNT);
+    $paginationMaxPage.text(Math.round(slick.slideCount / PAGE_COUNT));
   });
 
   $('.slider').slick({
     arrows: true,
     dots: true,
+    lazyLoad: 'ondemand',
     slidesToShow: 4,
     slidesToScroll: 4,
     speed: 1000,
@@ -232,7 +218,7 @@ var closeLoginPopup = function () {
   });
 
   document.onclick = function (e) {
-    if (loginPopup.querySelector('.login--active') & e.target !== loginPopup) {
+    if (e.target === loginPopup) {
       loginPopup.classList.remove('login--active');
       pageSite.classList.toggle('page__open');
     }
@@ -240,3 +226,31 @@ var closeLoginPopup = function () {
 };
 
 closeLoginPopup();
+
+var loginForm = document.querySelector('.login__form');
+var loginField = loginForm.querySelector('#login-email');
+
+var addDataFromLocalStorage = function (form, login) {
+  var isStorageSupport = true;
+  var storageLogin = '';
+
+  try {
+    storageLogin = localStorage.getItem('login');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+  window.addEventListener('load', function () {
+    if (storageLogin) {
+      login.value = storageLogin;
+    }
+  });
+
+  form.addEventListener('submit', function () {
+    if (isStorageSupport) {
+      localStorage.setItem('login', login.value);
+    }
+  });
+};
+
+addDataFromLocalStorage(loginForm, loginField);

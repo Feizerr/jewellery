@@ -1,4 +1,4 @@
-.filter__wrapper{
+.filter__wrapper {
   width: 250px;
   margin-right: 50px;
 }
@@ -102,7 +102,7 @@
   width: 15px;
   height: 8px;
   position: absolute;
-  background-position:bottom;
+  background-position: bottom;
   right: 26px;
   top: 27px;
 }
@@ -150,7 +150,7 @@
   height: 15px;
   padding: 0;
   border-radius: 50%;
-  background-color:$brown;
+  background-color: $brown;
   position: absolute;
   top: -6px;
   left: 0;
@@ -200,7 +200,7 @@
   border: 1px solid $brown;
 }
 
-.filter input:checked + label::after {
+.filter input:checked+label::after {
   content: '';
   position: absolute;
   left: 0;
@@ -211,8 +211,12 @@
   background-color: $brown;
 }
 
-.filter__option input:hover + label,
-.filter__option input:focus + label {
-color: rgba($brown, 0.7);
+.filter__option input:hover+label,
+.filter__option input:focus+label {
+  color: rgba($brown, 0.7);
 }
 
+.filter__accordion-no-js {
+  max-height: max-content;
+  overflow: auto;
+}

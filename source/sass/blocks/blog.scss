@@ -137,6 +137,7 @@
   .blog__container {
     min-height: 300px;
     margin-bottom: 50px;
+    background-size: cover;
   }
 }
 
@@ -269,7 +270,7 @@
 
 @media (max-width: $mobile-width) {
   .blog__article-wrapper {
-    padding-top:49px;
+    padding-top: 49px;
     position: relative;
   }
 }

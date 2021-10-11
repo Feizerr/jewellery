@@ -1,3 +1,11 @@
 .slick-dots button {
   color: $grey;
 }
+
+.slick-dots button:hover {
+  color: $brown;
+}
+
+.slick-dots button:active {
+  color: rgba($brown, 0.5);
+}

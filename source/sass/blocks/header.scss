@@ -68,7 +68,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .header__form svg{
+  .header__form svg {
     left: 15px;
   }
 }
@@ -78,7 +78,15 @@
 }
 
 @media (max-width: $mobile-width) {
-  .header__logo svg{
+  .header__logo {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header__logo svg {
     width: 52px;
     height: 52px;
   }

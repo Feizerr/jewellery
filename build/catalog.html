@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Онлайн-магазин ювелирных украшений CN">
-  <meta name="Keywords" content="ювелирные украшения, серьги, кольца, браслеты, золото">
+  <meta name="description" content="Online jewelry store CN">
+  <meta name="Keywords" content="jewelry, earrings, rings, bracelets, gold">
   <title>Стартовый шаблон</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -24,8 +24,8 @@
               <input type="search" id="search" placeholder="Type here to search">
             </label>
           </form>
-          <button class="header__toggle" type="button" aria-label="Открыть или закрыть меню">
-            <span class="visually-hidden">Открыть меню</span>
+          <button class="header__toggle" type="button" aria-label="open or close menu">
+            <span class="visually-hidden">Open menu</span>
           </button>
           <a href="index.html" class="header__logo logo">
             <svg width="66" height="66">
@@ -43,7 +43,7 @@
             </a>
           </div>
         </div>
-        <nav class="navigation header__navigation navigation__nojs">
+        <nav class="navigation header__navigation navigation--nojs">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#">What’s new</a>
@@ -91,6 +91,7 @@
       <div class="main__wrapper">
 
         <section class="filter" id="main-filter">
+          <h2 class="visually-hidden">Filter</h2>
           <div class="filter__wrapper">
             <form class="fitler__form modal-filter__form">
               <!-- Здесь начинается аккордеон -->
@@ -100,7 +101,6 @@
                   <legend class="filter__accordion-item-header">Product</legend>
                   <div class="filter__accordion-item-body filter__accordion-no-js">
                     <ul class="filter__accordion-item-content">
-
                       <li class="filter__option">
                         <input class="visually-hidden" type="checkbox" name="necklaces" id="filter-necklaces" checked="">
                         <label for="filter-necklaces">Necklaces</label>
@@ -190,7 +190,7 @@
             <li>
               <a class="catalog__link" href="#">
                 <picture>
-                  <source type="image/webp" srcset="img/.double-pearl-earringswebp 1x, img/double-pearl-earrings@2x.webp 2x">
+                  <source type="image/webp" srcset="img/double-pearl-earrings.webp 1x, img/double-pearl-earrings@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img loading="lazy" src="img/double-pearl-earrings.jpg" srcset="img/double-pearl-earrings@2x.jpg 2x" alt="Double pearl earrings " width="270" height="272">
                 </picture>
@@ -324,23 +324,25 @@
             <li class="pagination__item pagination__previous-page">
               <a class="pagination__button" href="#">Previous</a>
             </li>
-            <ul class="pagination__item pagination__page-list">
-              <li>
-                <a class="pagination__link pagination__link--active">1</a>
-              </li>
-              <li>
-                <a class="pagination__link" href="#">2</a>
-              </li>
-              <li>
-                <a class="pagination__link" href="#">3</a>
-              </li>
-              <li>
-                <a class="pagination__link" href="#">4</a>
-              </li>
-              <li>
-                <a class="pagination__link" href="#">5</a>
-              </li>
-            </ul>
+            <li>
+              <ul class="pagination__item pagination__page-list">
+                <li>
+                  <a class="pagination__link pagination__link--active">1</a>
+                </li>
+                <li>
+                  <a class="pagination__link" href="#">2</a>
+                </li>
+                <li>
+                  <a class="pagination__link" href="#">3</a>
+                </li>
+                <li>
+                  <a class="pagination__link" href="#">4</a>
+                </li>
+                <li>
+                  <a class="pagination__link" href="#">5</a>
+                </li>
+              </ul>
+            </li>
             <li class="pagination__item pagination__next-page">
               <a class="pagination__button" href="#">Next</a>
             </li>
@@ -366,6 +368,7 @@
           </form>
         </section>
         <section class="about-ordering">
+          <h2 class="visually-hidden">About ordering</h2>
           <ul>
             <li>
               <a href="#">
@@ -390,6 +393,7 @@
           </ul>
         </section>
         <section class="about-company">
+          <h2 class="visually-hidden">About us</h2>
           <ul>
             <li>
               <a href="#">
@@ -414,6 +418,7 @@
           </ul>
         </section>
         <section class="footer-social">
+          <h2 class="visually-hidden">Join us</h2>
           <ul>
             <li>
               <a href="#">
@@ -451,9 +456,7 @@
         </section>
       </div>
     </footer>
-
   </div>
-
   <section class="login">
     <div class="login__wrapper">
       <h2>Log In</h2>

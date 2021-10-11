@@ -2,8 +2,8 @@
   position: fixed;
   z-index: 15;
   top: 30px;
-	right: 0;
-	left: 0;
+  right: 0;
+  left: 0;
   display: none;
   width: 100%;
   min-height: 100vh;
@@ -18,14 +18,21 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 200px;
-  margin: auto;
+  padding-top: 189px;
+  margin: 68px auto;
   position: relative;
+}
+
+@media (max-width: $tablet-width) {
+  .login__wrapper {
+    margin-top: 49px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .login__wrapper {
     width: 270px;
+    margin-top: 19px;
     padding-top: 125px;
   }
 }
@@ -52,6 +59,7 @@
 @media (max-width: $mobile-width) {
   .login h2 {
     @include fonts(24px, 31px);
+    padding-bottom: 18px;
   }
 }
 
@@ -62,6 +70,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 @media (max-width: $mobile-width) {
@@ -102,34 +111,40 @@
 .login__form a {
   @include link();
   @include fonts(12px, 18px);
+  font-family: 'poppins-medium', 'Arial', sans-serif;
   color: $grey;
   text-align: right;
-  width: 340px;
+  width: 332px;
   margin-left: 28px;
+  padding-top: 10px
 }
 
 @media (max-width: $mobile-width) {
   .login__form a {
     width: 240px;
     margin: 0;
+    display: block;
+    padding-top: 9px;
   }
 }
 
 .login__form button {
   font-family: 'poppins-medium', 'Arial', sans-serif;
   width: 340px;
-  padding: 28px;
+  padding: 25px;
   background-color: $brown;
   color: $white;
   box-sizing: border-box;
-  margin: 50px auto 20px;
+  margin: 45px auto 15px;
   border: none;
   cursor: pointer;
+  display: block;
 }
 
 @media (max-width: $mobile-width) {
   .login__form button {
     width: 240px;
+    margin-top: 35px;
   }
 }
 
@@ -154,6 +169,7 @@
 @media (max-width: $mobile-width) {
   .login p {
     width: 240px;
+    padding-bottom: 41px;
   }
 }
 

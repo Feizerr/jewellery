@@ -23,6 +23,7 @@
 }
 
 @media (max-width: $mobile-width) {
+
   .subscribe h2,
   .subscribe p {
     max-width: 78%;
@@ -31,14 +32,14 @@
 
 .subscribe h2 {
   @include fonts (34px, 44px);
-  font-family: "cormorantgaramond-bold", "Arial", sans-serif;
+  font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
   letter-spacing: 0.7px;
   padding-bottom: 12px
 }
 
 .subscribe p {
   @include fonts (16px, 20px);
-  font-family: "poppins-regular", "Arial", sans-serif;
+  font-family: 'poppins-regular', 'Arial', sans-serif;
   color: $grey;
   padding-bottom: 33px;
 }

@@ -20,12 +20,11 @@
 
 @media (max-width: $tablet-width) {
   .modal-filter__form {
-  max-width: 423px;
-  position: relative;
-  padding-bottom: 40px;
+    max-width: 423px;
+    position: relative;
+    padding-bottom: 40px;
   }
 }
-
 
 @media (max-width: $mobile-width) {
   .modal-filter__form {
@@ -36,13 +35,12 @@
 
 @media (max-width: $tablet-width) {
   .modal__container {
-  max-width: 423px;
-  box-shadow: 10px 5px 5px rgba($beige, 0.3);
-  border: none;
-  margin: 30px auto 0;
+    max-width: 423px;
+    box-shadow: 10px 5px 5px rgba($beige, 0.3);
+    border: none;
+    margin: 30px auto 0;
+  }
 }
-}
-
 
 @media (max-width: $mobile-width) {
   .modal__container {
