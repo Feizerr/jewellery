@@ -43,7 +43,7 @@
             </a>
           </div>
         </div>
-        <nav class='navigation header__navigation navigation__nojs'>
+        <nav class='navigation header__navigation navigation--nojs'>
           <ul class='navigation__list'>
             <li class='navigation__item'>
               <a href='#'>What’s new</a>
@@ -62,25 +62,25 @@
             </li>
           </ul>
         </nav>
-        <ul class='navigation__list header__additional-list'>
-          <li class='navigation__item'>
+        <ul class='header__additional-list'>
+          <li class='header__additional-item'>
             <a class='header__additional-link' href='#'>About CH</a>
           </li>
-          <li class='navigation__item'>
+          <li class='header__additional-item'>
             <a class='header__additional-link' href='#'>Stores & Hours</a>
           </li>
-          <li class='navigation__item'>
+          <li class='header__additional-item'>
             <a class='header__additional-link' href='#'>Contact Us</a>
           </li>
-          <li class='navigation__item'>
-            <a class='header__additional-link header__additional-special'>Login</a>
+          <li class='header__additional-item'>
+            <a class='header__additional-link header__additional-special' href='login.html'>Login</a>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class='login login__for-page'>
+      <section class='login login--for-page'>
         <h1 class='visually-hidden'>Login page</h1>
         <h2>Log In</h2>
         <form class='login__form' action='https://echo.htmlacademy.ru' method='post' target='_blank'>
@@ -88,7 +88,7 @@
           <input type='email' id='login-email' name='login-email' placeholder='Your E-mail' required>
           <label class='visually-hidden' for='login-password'>Write yout password</label>
           <input type='text' id='login-password' name='login-password' placeholder='Password'>
-          <a href='#'>Forgot your password?</a>
+          <a class="login__forfot-link" href='#'>Forgot your password?</a>
           <button class='login__button' type='submit'>Log In</button>
         </form>
         <p>Don’t have an account?

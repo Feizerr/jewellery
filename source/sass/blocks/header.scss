@@ -296,12 +296,12 @@
 .header--active .header__additional-list {
   display: flex;
   flex-direction: column;
-  padding-top: 9px;
+  padding-top: 18px;
 }
 
 @media (max-width: $mobile-width) {
   .header--active .header__additional-list {
-    padding-top: 0;
+    padding-top: 9px;
   }
 }
 
@@ -310,7 +310,14 @@
 }
 
 .header--active .header__additional-special {
-  padding-top: 25px;
+  padding-top: 27px;
+  display: block;
+}
+
+@media(max-width: $mobile-width) {
+  .header--active .header__additional-special {
+    padding-top: 18px;
+  }
 }
 
 .header--active .header__navigation {

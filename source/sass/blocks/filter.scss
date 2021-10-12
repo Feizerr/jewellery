@@ -13,6 +13,7 @@
 @media (max-width: $tablet-width) {
   .filter {
     display: none;
+    width: 100%
   }
 }
 
@@ -40,6 +41,21 @@
   }
 }
 
+@media (max-width: $tablet-width) {
+  .filter__button-apply {
+    margin: 42px auto 17px;
+    width: 83%;
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__button-apply {
+    margin: 30px auto 17px;
+    width: 83%;
+  }
+}
+
 .filter__button-clear {
   background-color: $white;
   color: $brown;
@@ -52,6 +68,22 @@
   &:active {
     color: rgba($brown, 0.5);
     outline: 3px solid rgba($brown, 0.5);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .filter__button-clear {
+    margin: 24px auto 17px;
+    width: 83%;
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__button-clear {
+    margin: 18px auto 17px;
+    width: 83%;
+    display: block;
   }
 }
 
@@ -79,6 +111,18 @@
   cursor: pointer;
   display: flex;
   position: relative;
+}
+
+@media(max-width: $tablet-width) {
+  .filter__accordion-item-header {
+    padding: 34px 25px 35px;
+  }
+}
+
+@media(max-width: $mobile-width) {
+  .filter__accordion-item-header {
+    padding: 26px 28px 25px;
+  }
 }
 
 .filter__accordion-item .active {
@@ -112,6 +156,29 @@
   background-position: top;
 }
 
+@media (max-width: $tablet-width) {
+  .filter__accordion-item-header::after {
+    width: 27px;
+    height: 16px;
+    right: 37px;
+    top: 37px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .filter__accordion-item-header.active::after {
+    top: 30px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__accordion-item-header::after {
+    width: 21px;
+    height: 12px;
+    top: 23px;
+  }
+}
+
 .filter__accordion-item-body {
   max-height: 0;
   overflow: hidden;
@@ -124,8 +191,33 @@
   padding: 20px 31px 19px;
 }
 
+@media (max-width: $tablet-width) {
+  .filter__accordion-item-content {
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__accordion-item-content {
+    padding: 28px 35px 27px;
+  }
+}
+
 .filter__range-filter {
   width: 200px;
+}
+
+@media (max-width: $tablet-width) {
+  .filter__range-filter {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__range-filter {
+    margin-top:4px;
+  }
 }
 
 .filter__range-controls {
@@ -138,11 +230,31 @@
   background-color: $grey;
 }
 
+@media (max-width: $tablet-width) {
+  .filter__scale {
+    width: 304px;
+  }
+}
+
 .filter__bar {
   width: 90px;
   background-color: $brown;
   height: 2px;
   margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+  .filter__bar {
+    width: 180px;
+    margin: 0 33px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__bar {
+    width: 136px;
+    margin: 0 33px 0 18px;
+  }
 }
 
 .filter__toggle {
@@ -160,10 +272,33 @@
   left: 42px;
 }
 
+@media (max-width: $tablet-width) {
+  .filter__toggle-min {
+    left: 26px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__toggle-min {
+    left: 12px;
+  }
+}
+
 .filter__toggle-max {
   left: 142px;
 }
 
+@media (max-width: $tablet-width) {
+  .filter__toggle-max {
+    left: 202px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__toggle-max {
+    left: 147px;
+  }
+}
 .filter__price-controls {
   width: 100%;
   display: flex;
@@ -174,6 +309,12 @@
   padding-left: 38px;
 }
 
+@media (max-width: $mobile-width) {
+  .filter__price-controls label:first-of-type {
+    padding-left: 6px;
+  }
+}
+
 .filter__price-controls label:last-of-type {
   padding-right: 25px;
 }
@@ -182,11 +323,22 @@
   padding-bottom: 12px;
 }
 
+@media (max-width: $tablet-width) {
+  .filter__option:not(:last-child) {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__option:not(:last-child) {
+    padding-bottom: 18px;
+  }
+}
+
 .filter__option label {
   position: relative;
   display: block;
   cursor: pointer;
-  // user-select: none;
   padding-left: 25px;
 }
 
@@ -219,4 +371,36 @@
 .filter__accordion-no-js {
   max-height: max-content;
   overflow: auto;
+}
+
+.filter--no-js {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+.filter--no-js .filter__wrapper {
+  margin: 20px auto 40px;
+}
+
+@media (max-width: $tablet-width) {
+  .filter--no-js .filter__wrapper {
+    position: relative;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .filter__accordion-toggle  {
+    margin: 0 auto;
+    max-width: 382px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter__accordion-toggle  {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

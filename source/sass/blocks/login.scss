@@ -200,6 +200,25 @@
   background-color: rgba($beige, 0);
 }
 
-.login__for-page .login__button-close {
+.login--for-page .login__button-close {
   display: none;
+}
+
+.login--for-page {
+  display: block;
+  height: max-content;
+  background-color: $white;
+  margin: 0 auto;
+  position: relative;
+}
+
+.login--for-page .login__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.login--for-page a {
+  marging: 0 auto;
+
 }

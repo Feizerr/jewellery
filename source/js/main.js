@@ -13,6 +13,8 @@ if (document.querySelector('.slider--no-js')) {
 var navigation = document.querySelector('.navigation');
 var pageSite = document.querySelector('.page');
 
+navigation.classList.remove('navigation--nojs');
+
 var deleteNavigation = function () {
   window.addEventListener('resize', function () {
     if (window.innerWidth <= 1023) {
@@ -56,7 +58,7 @@ headerToggle.addEventListener('click', function () {
 var MIN_HEIGHT = 0;
 var accordionItemHeaders = document.querySelectorAll('.accordion__item > h3');
 var accordionItemsBody = document.querySelectorAll('.accordion__item-body');
-var PADDING = 30;
+var PADDING = 430;
 var PAGE_COUNT = 2;
 
 accordionItemsBody.forEach(function (accordionItem) {
@@ -162,7 +164,7 @@ var filter = document.querySelector('.filter');
 var showButton = document.querySelector('.catalog__show-button');
 var closePopupButton = document.querySelector('.modal-filter__close-button');
 
-if (filter || showButton || closePopupButton) {
+if (filter && showButton && closePopupButton) {
   showButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     filter.classList.add('modal-filter');
