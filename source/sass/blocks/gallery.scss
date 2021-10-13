@@ -94,12 +94,12 @@
   }
 }
 
-.gallery__normai-item {
+.gallery__normal-item {
   min-height: 230px;
 }
 
 @media (max-width: $tablet-width) {
-  .gallery__normai-item {
+  .gallery__normal-item {
     min-height: 133px;
   }
 }
@@ -159,7 +159,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .gallery__normai-item:not(:first-child) {
+  .gallery__normal-item:not(:first-child) {
     display: none;
   }
 }
