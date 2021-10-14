@@ -30,10 +30,26 @@
   @include link();
 }
 
+.pagination__link:hover:not(.pagination__link--active) {
+  color: $brown;
+}
+
+.pagination__link:active:not(.pagination__link--active) {
+  color: rgba($brown, 0.5);
+}
+
 .pagination__link--active,
 .pagination__button {
   color: $almost-black;
   @include link();
+}
+
+.pagination__button:hover {
+  color: $brown;
+}
+
+.pagination__button:active {
+  color: rgba($brown, 0.5);
 }
 
 @media (max-width: $mobile-width) {

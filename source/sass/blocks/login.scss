@@ -9,6 +9,7 @@
   min-height: 100vh;
   overflow: auto;
   overflow: hidden;
+  background-color: rgba($black,0.4);
 }
 
 .login__wrapper {
@@ -198,6 +199,7 @@
   right: 20px;
   border: none;
   background-color: rgba($beige, 0);
+  cursor: pointer;
 }
 
 .login--for-page .login__button-close {

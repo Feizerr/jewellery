@@ -61,6 +61,7 @@
   color: $white;
   padding: 10px 20px 10px 0;
   width: 100%;
+  cursor: pointer;
 
   &::placeholder {
     @include fonts(14px, 21px);

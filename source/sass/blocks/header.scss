@@ -51,6 +51,7 @@
   width: 206px;
   border: $white;
   padding: 9px 0 12px 29px;
+  cursor: pointer;
 }
 
 .header__form input::placeholder {
@@ -188,6 +189,7 @@
     height: 55px;
     flex-basis: 40%;
     margin-top: 21px;
+    cursor: pointer;
   }
 }
 
@@ -257,6 +259,13 @@
   background-color: rgba($white, 0.15);
 }
 
+.header--active input:hover,
+.header--active input:active {
+  border-bottom: none;
+  background-color: rgba($beige, 0.3);
+}
+
+
 .header--active .header__toggle {
   background-color: $brown;
   background-image: url('../img/active-button.svg');
@@ -322,4 +331,12 @@
 
 .header--active .header__navigation {
   display: block;
+}
+
+.header--active a:not(.header__logo):hover {
+  color: rgba($white, 0.5);
+}
+
+.header--active a:active {
+  color: rgba($white, 0.2);
 }

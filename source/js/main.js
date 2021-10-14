@@ -56,6 +56,7 @@ headerToggle.addEventListener('click', function () {
 // accordion
 
 var MIN_HEIGHT = 0;
+var accordion = document.querySelector('.accordion');
 var accordionItemHeaders = document.querySelectorAll('.accordion__item > h3');
 var accordionItemsBody = document.querySelectorAll('.accordion__item-body');
 var PADDING = 430;
@@ -256,3 +257,15 @@ var addDataFromLocalStorage = function (form, login) {
 };
 
 addDataFromLocalStorage(loginForm, loginField);
+
+var addTabIndex = function (someFilter, someFilterItemHeaders) {
+  if (someFilter) {
+    someFilterItemHeaders.forEach(function (header) {
+      header.setAttribute('tabindex', 0);
+    });
+  }
+};
+
+addTabIndex(filter, filterItemHeaders);
+addTabIndex(accordion, accordionItemHeaders);
+
