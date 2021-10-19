@@ -1,7 +1,7 @@
 .login {
   position: fixed;
   z-index: 15;
-  top: 30px;
+  top: 0;
   right: 0;
   left: 0;
   display: none;
@@ -10,6 +10,7 @@
   overflow: auto;
   overflow: hidden;
   background-color: rgba($black,0.4);
+  padding-top: 30px;
 }
 
 .login__wrapper {
@@ -52,7 +53,7 @@
   @include fonts(34px, 44px);
   width: 90%;
   margin: 0 auto;
-  padding: 0 0 31px;
+  padding: 0 0 20px;
   text-align: center;
   font-family: 'cormorantgaramond-bold', 'Arial', sans-serif;
 }
@@ -60,7 +61,7 @@
 @media (max-width: $mobile-width) {
   .login h2 {
     @include fonts(24px, 31px);
-    padding-bottom: 18px;
+    padding-bottom: 11px;
   }
 }
 
@@ -93,6 +94,12 @@
   cursor: pointer;
 }
 
+@media (max-width: $tablet-width) {
+  .login__form input {
+    padding-bottom: 9px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .login__form input {
     width: 240px;
@@ -100,7 +107,19 @@
 }
 
 .login__form input:not(:last-of-type) {
-  margin-bottom: 22px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .login__form input:not(:last-of-type) {
+    margin-bottom: 21px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .login__form input:not(:last-of-type) {
+    margin-bottom: 17px;
+  }
 }
 
 .login__form input::placeholder {
@@ -116,8 +135,14 @@
   color: $grey;
   text-align: right;
   width: 332px;
-  margin-left: 28px;
-  padding-top: 10px
+  margin-left: 15px;
+  padding-top: 13px
+}
+
+@media (max-width: $tablet-width) {
+  .login__form a {
+    padding-top: 6px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -125,7 +150,7 @@
     width: 240px;
     margin: 0;
     display: block;
-    padding-top: 9px;
+    padding-top: 7px;
   }
 }
 
@@ -200,6 +225,24 @@
   border: none;
   background-color: rgba($beige, 0);
   cursor: pointer;
+  background-size: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .login__button-close {
+    width: 22px;
+    height: 22px;
+    right: 15px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .login__button-close {
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: 16px
+  }
 }
 
 .login--for-page .login__button-close {

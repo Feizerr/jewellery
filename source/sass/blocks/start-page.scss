@@ -1,0 +1,22 @@
+.start-page {
+  margin: 40px auto;
+  width: 50%;
+}
+
+.start-page ul {
+  @include offset(0, 0);
+  padding-top: 30px;
+}
+
+
+.start-page a {
+  @include link();
+  @include fonts(24px, 42px);
+  color: $almost-black;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.start-page a:hover {
+  color: $brown;
+}
