@@ -77,16 +77,18 @@
 
 @media (max-width: $tablet-width) {
   .gallery ul {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
     row-gap: 21px;
     justify-content: center;
+    width: 700px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .gallery ul {
     padding-left: 15px;
+    width: 320px;
     padding-right: 15px;
     row-gap: 27px;
     grid-template-columns: repeat(2, 1fr);

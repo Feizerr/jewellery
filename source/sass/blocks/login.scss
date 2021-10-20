@@ -6,9 +6,8 @@
   left: 0;
   display: none;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow: auto;
-  overflow: hidden;
   background-color: rgba($black,0.4);
   padding-top: 30px;
 }
@@ -91,6 +90,7 @@
   background-color: $beige;
   margin: 0 auto;
   padding-top: 15px;
+  padding-bottom: 12px;
   cursor: pointer;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .login__form input:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 17px;
 }
 
 @media (max-width: $tablet-width) {
@@ -136,7 +136,7 @@
   text-align: right;
   width: 332px;
   margin-left: 15px;
-  padding-top: 13px
+  padding-top: 5px
 }
 
 @media (max-width: $tablet-width) {

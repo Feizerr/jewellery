@@ -86,19 +86,24 @@
   background-color: $black;
   color: $white;
   border: none;
-  min-width: fit-content;
+  min-width: 114px;
   cursor: pointer;
+  padding: 13px 0 0 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: $tablet-width) {
   .subscribe__button {
     width: 126px;
+    padding-top: 9px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .subscribe__button {
     width: 105px;
+    padding-top: 13px;
   }
 }
 
@@ -111,4 +116,9 @@
   &::placeholder {
     color: $brown;
   }
+}
+
+.subscribe__button svg {
+  display: block;
+  margin-left: 0;
 }

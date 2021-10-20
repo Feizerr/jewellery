@@ -340,6 +340,7 @@
   display: block;
   cursor: pointer;
   padding-left: 25px;
+  width: min-content;
 }
 
 .filter__option label::before {

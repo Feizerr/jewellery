@@ -5,11 +5,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    margin: 7px auto auto;
+    margin: 0 auto auto;
+    padding-top: 7px;
     display: block;
     width: 100%;
     background-color: $white;
-    position: fixedd;
     z-index: 10;
     width: 100%;
     min-height: 100vh;
@@ -20,7 +20,7 @@
 
 @media (max-width: $mobile-width) {
   .modal-filter {
-    margin-top: 44px;
+    padding-top: 44px;
   }
 }
 
@@ -29,6 +29,7 @@
     max-width: 423px;
     position: relative;
     padding-bottom: 40px;
+    box-shadow: 10px 5px 5px rgba($beige, 0.3);
   }
 }
 
@@ -36,13 +37,13 @@
   .modal-filter__form {
     max-width: 87%;
     margin: 0 auto;
+    box-shadow: 0 4px 15px 8px rgba($beige, 0.3);
   }
 }
 
 @media (max-width: $tablet-width) {
   .modal-filter__container {
     max-width: 423px;
-    box-shadow: 10px 5px 5px rgba($beige, 0.3);
     border: none;
     margin: 30px auto 0;
   }
@@ -51,7 +52,6 @@
 @media (max-width: $mobile-width) {
   .modal-filter__container {
     max-width: 100%;
-    box-shadow: 0 4px 15px 8px rgba($beige, 0.3);
   }
 }
 
@@ -89,4 +89,8 @@
   .modal-filter .filter__accordion-item:last-child {
     border-bottom: 1px solid $brown;
   }
+}
+
+.modal-filter__container .filter__accordion-item:last-child {
+  border-bottom: 1px solid $brown;
 }
